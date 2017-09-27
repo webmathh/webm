@@ -1,0 +1,30 @@
+.nav-main
+	border-width: 2px
+	border-style: solid
+	-webkit-border-radius: 25px
+	-moz-border-radius: 25px
+	border-radius: 25px
+	height: 50px
+	margin-top: 15px
+	padding: 0 10%
+	line-height: 45px
+
+	ul
+		list-style-type: none
+		padding: 0
+		margin: 0
+		display: flex
+		justify-content: space-between
+		flex-wrap: nowrap
+
+		li
+			a
+				text-decoration: none
+				transition: all .25s
+				+fz(20)
+				color: #393939
+				+ffg
+
+@media screen and (max-width: 768px)
+	.nav-main
+		display: none

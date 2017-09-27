@@ -1,0 +1,61 @@
+.button
+	text-decoration: none
+	text-align: center
+	width: 100%
+	margin: 0 auto
+	display: block
+	transition: all .25s
+
+	&-brs35
+		-webkit-border-radius: 35px
+		-moz-border-radius: 35px
+		border-radius: 35px
+	&-brs20
+		-webkit-border-radius: 20px
+		-moz-border-radius: 20px
+		border-radius: 20px
+	&-brs22
+		-webkit-border-radius: 22px
+		-moz-border-radius: 22px
+		border-radius: 22px
+
+	&-blue
+		background-color: #11b3dc
+		color: #ffffff
+		&:hover
+			background-color: darken(#11b3dc, 10%)
+
+	&-more
+		background-color: #ffffff
+		color: #393939
+		border: solid 1px #393939
+		&:hover
+			background-color: #11b3dc
+			color: #000
+			border-color: #11b3dc
+
+	&-rev
+		background-color: #fff
+		color: #393939
+		border: solid 1px #dbdbdb
+		&:hover
+			background-color: #72a846
+			color: #ffffff
+			border-color: #72a846
+	
+	&-red
+		background-color: #dd4a0a
+		color: #ffffff
+		&:hover
+			background-color: darken(#dd4a0a, 10%)
+
+
+
+	&-head
+		display: block
+		max-width: 284px
+		width: 100%
+		height: 43px
+		line-height: 43px
+		+fz(16)
+		+ffg

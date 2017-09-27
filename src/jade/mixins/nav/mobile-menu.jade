@@ -1,0 +1,46 @@
+mixin mobile-menu()
+   .mobile-menu
+      .mobile-menu-top
+         .mobile-menu__wrap
+            .mobile-menu__logo
+               a(href="/")
+                  img(src="img/logo.png" alt='123')
+            .mobile-menu__phone
+               a(href="tel:+7 (495) 295-99-55") +7 (495) 295-99-55
+               p мы вам перезвоним
+            .mobile-menu__cross
+               span
+               span
+      .mobile-menu-list
+         nav
+            ul
+               li.drop-list.mobile-menu_blue
+                  span Услуги
+                  ul
+                     li
+                        a(href="#") Контакты
+                     li
+                        a(href="#") Партнеры
+               li.drop-list.mobile-menu_green
+                  span Кейсы
+                  ul
+                     li
+                        a(href="#") Контакты
+                     li
+                        a(href="#") Партнеры
+               li.drop-list.mobile-menu_yellow
+                  span ИнфоБлог
+                  ul
+                     li
+                        a(href="#") Контакты
+                     li
+                        a(href="#") Партнеры
+               li.drop-list.mobile-menu_brown
+                  span О компании
+                  ul
+                     li
+                        a(href="#") Контакты
+                     li
+                        a(href="#") Партнеры
+      .mobile-menu-footer
+         button.button.button-red.mobile-menu__button.modile-open Спросить бесплатно

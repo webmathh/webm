@@ -1,0 +1,29 @@
+.logo
+	&__text
+		display: inline-block
+		padding-left: 15px
+	&__top
+		+ffg
+		+fz(39.7)
+		color: #ffffff
+		line-height: 1
+	&__bottom
+		+ffg
+		+fz(18)
+		line-height: 1.03
+		text-align: left
+		color: #4cc710
+
+
+.logo-topline
+	+clearfix
+	display: block
+	img
+		float: left
+		vertical-align: middle
+
+@media screen and (max-width: 768px)
+	.logo-topline
+		display: block
+		max-width: 380px
+		margin: 0 auto

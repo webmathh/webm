@@ -1,0 +1,138 @@
+.mobile-menu
+	position: fixed
+	z-index: 10001
+	display: none
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	width: 100%
+	height: 100%
+	overflow: auto
+	background-color: #fff
+
+	&-top
+		background-color: #393939
+		padding: 40px
+	&-footer
+		background-color: #393939
+		padding: 40px
+
+	&__wrap
+		display: flex
+		flex-wrap: nowrap
+		align-items: center
+		justify-content: space-between
+
+	&__logo
+		a
+			text-decoration: none
+		img
+			height: 50px
+			vertical-align: top
+			width: auto
+	&__phone
+		text-align: center
+		a
+			+fz(30)
+			font-family: Candara, sans-serif
+			font-weight: 400
+			text-decoration: none
+			color: #FFFFFF
+			line-height: 30px
+		p
+			+ffg
+			+fz(20)
+			color: #878787
+			line-height: 22px
+	&__cross
+		cursor: pointer
+		height: 50px
+		position: relative
+		width: 50px
+		span
+			height: 4px
+			width: 50px
+			background-color: #fff
+			display: block
+			-webkit-border-radius: 25px
+			-moz-border-radius: 25px
+			border-radius: 25px
+			position: relative
+			&:first-child
+				transform: rotate(45deg)
+				top: 23px
+			&:last-child
+				transform: rotate(-45deg)
+				top: 20px
+	&__button
+		height: 50px
+		line-height: 45px
+		max-width: 370px
+		cursor: pointer
+		+ffg
+		+fz(20)
+
+
+	&-list
+		ul
+			list-style-type: none
+
+		li
+			cursor: pointer
+			text-align: center
+			span, a
+				vertical-align: middle
+				line-height: 130px
+				height: 130px
+				+fz(30)
+				+ffg
+				text-decoration: none
+				color: #FFFFFF
+				letter-spacing: 0.9px
+			&.mobile-menu
+				&_blue
+					background-color: #4697a8
+					ul
+						background-color: darken(#4697a8, 10%)
+						li
+							a:hover
+								background-color: #4697a8
+				&_green
+					background-color: #72a846
+					ul
+						background-color: darken(#72a846, 10%)
+						li
+							a:hover
+								background-color: #72a846
+				&_yellow
+					background-color: #deb04c
+					ul
+						background-color: darken(#deb04c, 10%)
+						li
+							a:hover
+								background-color: #deb04c
+				&_brown
+					background-color: #6b5252
+					ul
+						background-color: darken(#6b5252, 10%)
+						li
+							a:hover
+								background-color: #6b5252
+			ul
+				display: none
+				li
+					a
+						height: 70px
+						line-height: 70px
+						display: block
+						text-align: left
+						padding: 0 18%
+						transition: all .25s
+						+fz(24)
+						letter-spacing: 0.7px
+
+@media screen and (max-width: 500px)
+	.mobile-menu__phone
+		display: none
+

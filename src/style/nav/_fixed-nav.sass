@@ -1,0 +1,94 @@
+.nav-fixed
+	position: fixed
+	top: 10px
+	left: 0
+	right: 0
+	max-width: 1170px
+	width: 100%
+	display: none
+	margin: 0 auto
+	-webkit-border-radius: 25px
+	-moz-border-radius: 25px
+	border-radius: 25px
+	height: 50px
+	line-height: 45px
+	padding: 0 1%
+	ul
+		list-style-type: none
+		display: flex
+		flex-wrap: nowrap
+		justify-content: space-between
+	img
+		vertical-align: middle
+	li
+		a
+			text-decoration: none
+			transition: all .25s
+			+fz(20)
+			color: #393939
+			+ffg
+
+	.menu-hide
+		display: none
+.nav-dropdown
+	position: absolute
+	right: 0
+	top: 0
+	bottom: 0
+	background-color: #fff
+	width: 50px
+	height: 50px
+	-webkit-border-radius: 25px
+	-moz-border-radius: 25px
+	border-radius: 25px
+	cursor: pointer
+	display: none
+	&_red
+		background-color: #a84646
+	&_green
+		background-color: #4cc710
+	span
+		width: 30px
+		height: 4px
+		border-radius: 2px
+		background-color: #ffffff
+		display: block
+		margin: 0 auto
+		&:first-child
+			margin-top: 15px
+			margin-bottom: 4px
+		&:last-child
+			margin-bottom: 15px
+			margin-top: 4px
+
+.nav-fixed ul ul
+	width: 65%
+.mobile-logo-text
+	+fz(24)
+	color: #393939
+	padding-left: 15px
+	+ffg
+	display: none
+	vertical-align: middle
+
+
+@media screen and (max-width: 768px)
+	.nav-fixed
+		display: block
+		width: 95%
+	.nav-fixed ul ul
+		display: none
+	.nav-dropdown
+		display: block
+	.nav-phone
+		margin-right: 60px
+		margin-top: 4px
+	.nav-logo
+		padding-left: 20px
+	.mobile-logo-text
+		display: inline
+		+fz(18)
+
+@media screen and (max-width: 500px)
+	.nav-phone
+		display: none

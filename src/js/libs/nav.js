@@ -21,9 +21,10 @@ $(window).on('load resize', function () {
         $('.nav-main').fadeOut();
     }
 });
-$('.drop-list').click(function (e) {
+$('.drop-list span').click(function (e) {
     e.preventDefault();
-   $(this).children('ul').slideToggle();
+    $('.drop-list ul').slideUp();
+    $(this).parent().children('ul').slideToggle();
 });
 $('.mobile-menu__cross').click(function () {
     $('.mobile-menu').fadeOut();

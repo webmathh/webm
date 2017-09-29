@@ -1,0 +1,59 @@
+.footer
+	background-color: #172a2f
+	padding: 40px 0 25px
+	&__wrapper
+		max-width: 1170px
+		margin: 0 auto
+		display: flex
+		flex-wrap: nowrap
+		justify-content: space-between
+	&__wrap
+		flex-basis: (100/6)+0%
+		width: (100/6)+0%
+		h4
+			color: #70a2b3
+			+fz(20)
+			font-family: Candara, sans-serif
+			font-weight: 400
+			padding-bottom: 10px
+		ul
+			list-style-type: none
+			padding-left: 15px
+		li, .footer__item
+			a
+				text-decoration: none
+				transition: all .25s
+				color: #355f6a
+				+fz(18)
+				font-family: Candara, sans-serif
+				line-height: 20px
+				&:hover
+					color: #70a2b3
+					text-decoration: underline
+		.footer__item
+			.footer__phone
+				color: #ffffff
+				+fz(20)
+				margin-left: 25px
+				&:hover
+					text-decoration: none
+					color: darken(#fff, 10%)
+	&__wrap
+		.footer__social
+			width: 60%
+			margin-left: auto
+			margin-right: auto
+
+			a
+				width: 46px
+				height: 46px
+				-webkit-border-radius: 10em
+				-moz-border-radius: 10em
+				border-radius: 10em
+				background-color: #355f6a
+				text-align: center
+				overflow: hidden
+				display: inline-block
+				&:first-child
+					margin-right: 10px
+

@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b7d228a-2514-41c9-bddf-fec4df01c119" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jade/mixins/index/second-section.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/style/index/_works.sass" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/style/system/_section.sass" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/img/IMG_43717.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/index.html" afterPath="$PROJECT_DIR$/build/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/style/styles.css" afterPath="$PROJECT_DIR$/build/style/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.jade" afterPath="$PROJECT_DIR$/src/index.jade" />
-    </list>
+    <list default="true" id="2b7d228a-2514-41c9-bddf-fec4df01c119" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -840,12 +831,12 @@
       <workItem from="1506683065357" duration="2807000" />
       <workItem from="1506753107939" duration="1124000" />
       <workItem from="1506767757415" duration="3843000" />
-      <workItem from="1506773061391" duration="2057000" />
+      <workItem from="1506773061391" duration="2655000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40994000" />
+    <option name="totallyTimeSpent" value="41592000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />

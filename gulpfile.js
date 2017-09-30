@@ -60,7 +60,7 @@ var config = {
     server: {
         baseDir: "./build"
     },
-    tunnel: true,
+    tunnel: false,
     host: 'localhost',
     port: 3001,
     logPrefix: "Frontend_Devil"

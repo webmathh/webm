@@ -1,0 +1,52 @@
+.head
+	&__content
+		text-align: center
+		&_title
+			font-family: GardensC, sans-serif
+			+fz(40)
+			color: #ffffff
+			margin-top: 60px
+			font-weight: 400
+			text-shadow: 0px 1px 1px rgba(0, 0, 1, 0.4)
+		&_blue
+			letter-spacing: 1.1px
+			color: #7ee2fc
+			+ffg
+			+fz(36)
+			font-weight: 400
+			margin-top: 30px
+			strong
+				text-decoration: underline
+				font-weight: 400
+		&_footer
+			+fz(24)
+			letter-spacing: 0.7px
+			+ffg
+			color: #dedede
+			margin-top: 50px
+			margin-bottom: 100px
+		&_button
+			max-width: 370px
+			width: 100%
+			margin: 0 auto
+			cursor: pointer
+			height: 70px
+			line-height: 65px
+			+fz(30)
+			+ffg
+@media screen and (max-width: 768px)
+	.head
+		&__content
+			&_title
+				+fz(25)
+			&_blue
+				margin-top: 15px
+				+fz(20)
+			&_footer
+				+fz(18)
+				margin-top: 20px
+				margin-bottom: 30px
+			&_button
+				+fz(20)
+				height: 40px
+				line-height: 35px

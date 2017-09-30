@@ -1,0 +1,27 @@
+mixin work
+	section.works.section
+		h2.h2.h2-dark Для кого работаем
+		.works__wrapper
+			+works('ip', 'Идивидуальный предприниматель', 'green')
+			+works('gos', 'Директор Гос учреждения', 'lazyre')
+			+works('molod', 'Участник бизнес молодости', 'blue')
+			+works('sred', 'Владелец среднего бизнеса', 'orange')
+			+works('krup', 'Владелец крупного бизнеса', 'red')
+			+works('not-know', 'Не могу определиться', 'puple')
+
+mixin works(img, text, color)
+	.works__item(class="works__item_"+color)
+		.works__wrap
+			.works__left
+				.works__img
+					img(src="img/"+img+".png" alt=text)
+				h3.works__title=text
+			.works__right
+				ul
+					li Участники ЦЕХА
+					li МЗС
+					li Тест ниши
+					li Участники Интенсива
+					li Переупаковка
+		.works__footer
+			a(href="#" class="works__link") Получить презинтацию

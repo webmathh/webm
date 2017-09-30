@@ -1,0 +1,139 @@
+=worksColor($color)
+	.works__title
+		color: $color
+	.works__right ul li
+		color: $color
+	.works__footer a
+		background-color: $color
+		&:hover
+			background-color: darken($color, 10%)
+
+
+.works
+	&__wrapper
+		padding-top: 70px
+		max-width: 1170px
+		width: 100%
+		margin: 0 auto
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: flex-start
+	&__item
+		width: (100/3)+0%
+		flex-basis: (100/3)+0%
+		padding-left: 10px
+		padding-right: 10px
+		margin-bottom: 80px
+		&_green
+			+worksColor(#356a37)
+		&_lazyre
+			+worksColor(#355f6a)
+		&_blue
+			+worksColor(#36497e)
+		&_orange
+			+worksColor(#9f5524)
+		&_red
+			+worksColor(#833131)
+		&_puple
+			+worksColor(#5d356a)
+		&:hover
+			.works
+				&__footer
+					opacity: 1
+				&__right
+					opacity: 1
+	&__wrap
+		display: flex
+		justify-content: space-between
+	&__left
+		width: 160px
+		text-align: center
+	&__title
+		+fz(19)
+		font-family: Candara, sans-serif
+		font-weight: 400
+
+	&__img
+		width: 65px
+		height: 84px
+		line-height: 84px
+		margin: 0 auto
+		img
+			vertical-align: middle
+	&__right
+		opacity: 0
+		transition: all .25s
+		ul
+			list-style-type: none
+			li
+				font-family: Candara, sans-serif
+				font-weight: 400
+				+fz(19)
+				line-height: 1.3
+	&__footer
+		text-align: center
+		margin-top: 20px
+		opacity: 0
+		transition: all .25s
+		a
+			display: block
+			max-width: 230px
+			width: 100%
+			margin: 0 auto
+			transition: all .25s
+			height: 40px
+			-webkit-border-radius: 20px
+			-moz-border-radius: 20px
+			border-radius: 20px
+			line-height: 40px
+			color: #FFFFFF
+			text-decoration: none
+			letter-spacing: 0.2px
+			+ffg
+			+fz(16)
+
+@media screen and (max-width: 1170px)
+	.works
+		&__wrapper
+			padding-left: 20px
+			padding-right: 20px
+@media screen and (max-width: 1000px)
+	.works
+		&__item
+			flex-basis: (100/2)+0%
+			width: (100/2)+0%
+			margin-bottom: 40px
+		&__footer
+			opacity: 1
+		&__right
+			opacity: 1
+
+@media screen and (max-width: 768px)
+	.works
+		&__item
+			flex-basis: (100/1)+0%
+			width: (100/1)+0%
+		&__wrap
+			justify-content: center
+		&__wrapper
+			padding-top: 30px
+		&__right
+			padding-left: 30px
+
+@media screen and (max-width: 500px)
+	.works
+		&__wrapper
+			padding-left: 0
+			padding-right: 0
+		&__wrap
+			display: block
+		&__left
+			text-align: center
+			margin: auto
+		&__right
+			text-align: center
+			margin-top: 20px
+			padding: 0
+		&__item
+			padding: 0

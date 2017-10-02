@@ -1,0 +1,92 @@
+.sites
+	&__wrapper
+		max-width: 1170px
+		width: 100%
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		margin: 0 auto
+		padding-top: 50px
+	&__item
+		width: 30%
+		flex-basis: 30%
+		border-radius: 25px
+		overflow: hidden
+		transition: all .25s
+		background-color: #fff
+		text-align: center
+		padding: 30px 0 10px
+		margin-bottom: 50px
+		&:nth-child(4), &:nth-child(5), &:nth-child(6)
+			margin-bottom: 0
+		&:hover
+			box-shadow: 0px 1px 8px 0 rgba(0, 0, 1, 0.2)
+			.sites__button
+				background-color: #11b3dc
+				border-color: transparent
+				color: #fff
+	&__title
+		+fz(24)
+		font-family: Candara, sans-serif
+		font-weight: bold
+		color: #393939
+		padding-bottom: 15px
+	&__text
+		max-width: 305px
+		width: 100%
+		margin: 0 auto
+		+fz(18)
+		font-weight: 400
+		color: #628e99
+		padding-bottom: 40px
+	&__price
+		color: #393939
+		font-family: Candara, sans-serif
+		font-weight: 400
+		+fz(24)
+		padding-bottom: 12px
+	&__button
+		max-width: 170px
+		width: 100%
+		margin: 0 auto
+		display: block
+		-webkit-border-radius: 20px
+		-moz-border-radius: 20px
+		border-radius: 20px
+		border: solid 1px #393939
+		transition: all .25s
+		height: 40px
+		line-height: 35px
+		color: #393939
+		background-color: #fff
+		+fz(20)
+		+ffg
+		text-decoration: none
+
+@media screen and (max-width: 1170px)
+	.sites
+		&__wrapper
+			padding-left: 20px
+			padding-right: 20px
+		
+@media screen and (max-width: 1050px)
+	.sites
+		&__wrapper
+			padding-top: 20px
+		&__item
+			width: 48%
+			flex-basis: 48%
+			margin-top: 30px
+			margin-bottom: 0
+@media screen and (max-width: 768px)
+	.sites
+		&__wrapper
+			padding-left: 5px
+			padding-right: 5px
+			padding-top: 0
+		&__item
+			width: 98%
+			flex-basis: 98%
+			min-width: 300px
+			margin: 0 auto
+			margin-top: 30px

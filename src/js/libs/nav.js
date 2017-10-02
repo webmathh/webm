@@ -27,8 +27,8 @@ $('.drop-list span').click(function (e) {
     $(this).parent().children('ul').slideToggle();
 });
 $('.mobile-menu__cross').click(function () {
-    $('.mobile-menu').fadeOut();
+    $('.mobile-menu').slideUp();
 });
 $('.nav-dropdown').click(function () {
-    $('.mobile-menu').fadeIn();
+    $('.mobile-menu').slideDown();
 });

@@ -1,0 +1,20 @@
+mixin modal
+	.modal.modal-presentation
+		.modal__wrapper
+			.modal__crosswrap
+				.modal__cross
+					span
+					span
+			h2.modal__title Мы отправим презентацию<br/>вам на е-майл в виде PDF файла.<br/>И вы сможете обдумать наше предложение
+			.modal__form
+				form(method="POST")
+					.modal__item
+						input(type="text" placeholder="Как к вам обращаться?" name="name").modal__input
+					.modal__item
+						input(type="email" placeholder="Укажите свой действующией е-майл." name="email").modal__input
+					.modal__footer
+						p Заполняя данную форму, вы принимаете условия “Соглашения об использовании сайта”, в том числе в части <a href="#">обработки персональных данных</a>
+					.modal__button
+						input(type="hidden" name="theme")
+						button Отправить
+

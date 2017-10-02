@@ -3,13 +3,16 @@
 		color: $color
 	.works__right ul li
 		color: $color
-	.works__footer a
+	.works__footer button
 		background-color: $color
+		cursor: pointer
 		&:hover
 			background-color: darken($color, 10%)
 
 
 .works
+	&.section
+		padding-bottom: 30px
 	&__wrapper
 		padding-top: 70px
 		max-width: 1170px
@@ -25,6 +28,8 @@
 		padding-left: 10px
 		padding-right: 10px
 		margin-bottom: 80px
+		&:nth-child(4), &:nth-child(5), &:nth-child(6)
+			margin-bottom: 0
 		&_green
 			+worksColor(#356a37)
 		&_lazyre
@@ -76,7 +81,7 @@
 		margin-top: 20px
 		opacity: 0
 		transition: all .25s
-		a
+		button
 			display: block
 			max-width: 230px
 			width: 100%
@@ -114,6 +119,9 @@
 		&__item
 			flex-basis: (100/1)+0%
 			width: (100/1)+0%
+			margin-top: 30px
+			&:first-child
+				margin-top: 0
 		&__wrap
 			justify-content: center
 		&__wrapper

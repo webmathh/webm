@@ -100,3 +100,12 @@
 				background-color: darken(#3f9814, 10%)
 
 
+@media screen and (max-height: 700px)
+	.modal
+		overflow: auto
+		&__wrapper
+			position: relative
+			top: 0
+			transform: translateY(0)
+		&__title
+			+fz(19)

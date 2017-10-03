@@ -1,4 +1,29 @@
-<!DOCTYPE html>
+
+<div class="modal modal_ask">
+  <div class="modal__wrapper">
+    <div class="modal__crosswrap">
+      <div class="modal__cross"><span></span><span></span></div>
+    </div>
+    <h2 class="modal__title">Мы отправим презентацию<br/>вам на е-майл в виде PDF файла.<br/>И вы сможете обдумать наше предложение</h2>
+    <div class="modal__form">
+      <form method="POST">
+        <div class="modal__item">
+          <input type="text" placeholder="Как к вам обращаться?" name="name" required="required" class="modal__input"/>
+        </div>
+        <div class="modal__item">
+          <input type="email" placeholder="Укажите свой действующией е-майл." name="email" required="required" class="modal__input"/>
+        </div>
+        <div class="modal__footer">
+          <p>Заполняя данную форму, вы принимаете условия “Соглашения об использовании сайта”, в том числе в части <a href="#">обработки персональных данных</a></p>
+        </div>
+        <div class="modal__button">
+          <input type="hidden" name="theme"/>
+          <button>Отправить</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div><!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8"/>
@@ -19,7 +44,7 @@
                   <div class="logo__bottom">простые web решения<br/>сложных задач</div>
                 </div></a>
               <div class="head__right">
-                <div class="head__button"><a href="#" class="modal-open button button-red button-brs22 button-head">Спросить бесплатно</a></div>
+                <div class="head__button"><a href="#" data-theme="Вопрос" data-modal=".modal_ask" class="modal-open button button-red button-brs22 button-head">Спросить бесплатно</a></div>
                 <div class="head__phone"><a href="tel:000000000" class="phone-top">8 (495) 295-99-55</a>
                   <div class="phone-callback">мы вам перезвоним</div>
                 </div>
@@ -91,14 +116,14 @@
               </nav>
             </div>
             <div class="mobile-menu-footer">
-              <button class="button button-red mobile-menu__button modile-open">Спросить бесплатно</button>
+              <button data-theme="Вопрос" data-modal=".modal_ask" class="button button-red mobile-menu__button modal-open">Спросить бесплатно</button>
             </div>
           </div>
           <div class="head__content">
             <h1 class="head__content_title">Создаём, раскручиваем и поддерживаем <br/>сайты<br/>для любой сферы и любого бюджета.</h1>
             <p class="head__content_blue">Первые <strong>клиенты</strong> уже завтра</p>
             <p class="head__content_footer">Работаем по всей России и СНГ</p>
-            <button class="button button-brs35 button-blue modal-open head__content_button">Узнать бесплатно</button>
+            <button data-theme="Вопрос" data-modal=".modal_ask" class="button button-brs35 button-blue modal-open head__content_button">Узнать бесплатно</button>
           </div>
         </header>
         <section class="works section">
@@ -260,7 +285,7 @@
             <div class="sites__item">
               <h3 class="sites__title">Нет в списке? Не беда!</h3>
               <div class="sites__text">
-                <p>За годы работы,приобретённыйопыт,позволяет нам решить любую задачу клиента.</p>
+                <p>За годы работы,приобретённый опыт,позволяет нам решить любую задачу клиента.</p>
               </div>
               <div class="sites__price">И есть ещё решения!</div><a href="#" class="sites__button">Подробнее</a>
             </div>
@@ -340,10 +365,10 @@
         <div class="modal__form">
           <form method="POST">
             <div class="modal__item">
-              <input type="text" placeholder="Как к вам обращаться?" name="name" class="modal__input"/>
+              <input type="text" placeholder="Как к вам обращаться?" name="name" required="required" class="modal__input"/>
             </div>
             <div class="modal__item">
-              <input type="email" placeholder="Укажите свой действующией е-майл." name="email" class="modal__input"/>
+              <input type="email" placeholder="Укажите свой действующией е-майл." name="email" required="required" class="modal__input"/>
             </div>
             <div class="modal__footer">
               <p>Заполняя данную форму, вы принимаете условия “Соглашения об использовании сайта”, в том числе в части <a href="#">обработки персональных данных</a></p>

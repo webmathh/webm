@@ -1,0 +1,64 @@
+
+.team
+	&__wrapper
+		max-width: 1170px
+		width: 100%
+		margin: 0 auto
+		display: flex
+		flex-wrap: nowrap
+		justify-content: space-between
+		padding-top: 50px
+	&__item
+		width: (100/4)-1%
+		flex-basis: (100/4)-1%
+		text-align: center
+	&__imgwrap
+		width: 270px
+		height: 270px
+		margin: 0 auto
+		-webkit-border-radius: 10em
+		-moz-border-radius: 10em
+		border-radius: 10em
+		overflow: hidden
+	&__img
+		vertical-align: top
+		-webkit-border-radius: 10em
+		-moz-border-radius: 10em
+		border-radius: 10em
+		width: 100%
+		height: auto
+	&__name
+		padding-top: 20px
+		strong
+			+ffg
+			+fz(24)
+			color: #393939
+	&__position
+		padding-top: 5px
+		width: 154px
+		margin: 0 auto
+		p
+			font-family: Candara, sans-serif
+			+fz(22)
+			font-weight: 400
+			color: #909090
+			line-height: 1.27
+
+@media screen and (max-width: 1170px)
+	.section.team
+		padding-bottom: 30px
+	.team
+		&__wrapper
+			padding-left: 10px
+			padding-right: 10px
+			flex-wrap: wrap
+			padding-top: 30px
+		&__item
+			width: (100/2) - 1%
+			flex-basis: (100/2) - 1%
+			margin-bottom: 30px
+@media screen and (max-width: 768px)
+	.team
+		&__item
+			flex-basis: 100%
+			width: 100%

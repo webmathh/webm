@@ -13,6 +13,7 @@
 	height: 50px
 	line-height: 45px
 	padding: 0 1%
+	padding-right: 50px
 	ul
 		list-style-type: none
 		display: flex
@@ -42,16 +43,18 @@
 	-moz-border-radius: 25px
 	border-radius: 25px
 	cursor: pointer
-	display: none
 	&_red
 		background-color: #a84646
 	&_green
 		background-color: #4cc710
+	&_grey
+		background-color: #fff
+		span
+			background-color: #000
 	span
 		width: 30px
 		height: 4px
 		border-radius: 2px
-		background-color: #ffffff
 		display: block
 		margin: 0 auto
 		&:first-child
@@ -76,6 +79,7 @@
 	.nav-fixed
 		display: block
 		width: 95%
+		padding-right: 1%
 	.nav-fixed ul ul
 		display: none
 	.nav-dropdown

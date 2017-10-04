@@ -1,0 +1,15 @@
+mixin section-form
+	section.section.callback
+		.callback__wrapper
+			strong.callback__strong Если не успеем в срок - вернём деньги!
+			h2.callback__title Отправьте заявку сейчас<br/>и получите оформление<br/>соц. сетей в подарок!
+			form(method="POST")
+				.callback__form
+					.callback__item
+						input(type="text" placeholder="Обращение" name="name" required).callback__input
+					.callback__item
+						input(type="tel" placeholder="Телефон" name="tel" required).callback__input
+					.callback__item
+						input(type="email" placeholder="E-mail" name="email" required).callback__input
+					.callback__item
+						button.callback__button Отправить

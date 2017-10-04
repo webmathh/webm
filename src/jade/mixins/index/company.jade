@@ -1,0 +1,27 @@
+mixin company
+	section.section.company
+		h2.h2.h2-dark С кем работали?
+		.company__wrapper
+			.company__nav.company__nav_left <
+			.company__nav.company__nav_right >
+			.company__wrap
+				.company__slider.owl-carousel.owl-theme
+					+com
+					+com
+					+com
+					+com
+					+com
+					+com
+
+
+		.rev__all
+			a(href="#") все клиенты
+
+mixin com
+	.item
+		.company__container
+			a(href="#")
+				.company__img
+					img(src="http://loremflickr.com/170/170" alt="123")
+				.company__text
+					h4 Центр “Мои документы”

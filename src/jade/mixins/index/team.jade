@@ -1,0 +1,20 @@
+mixin teams
+	section.section.team
+		h2.h2.h2-dark Команда
+		.team__wrapper
+			+team('Алена Брежнева', 'SEO, ведение проектов')
+			+team('Степан Кузовов', 'Разработка front, back - end')
+			+team('Евгений Марков', 'Дизайн, маркетинг')
+			+team('Илья Федулов', 'Фото, видео сопровождение')
+
+
+mixin team(who, positions)
+	.team__item
+		.team__imgwrap
+			img(src="http://loremflickr.com/270/270" alt=who).team__img
+		.team__name
+			strong=who
+		.team__position
+			p=positions
+
+

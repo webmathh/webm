@@ -1,16 +1,24 @@
-.nav-white
-	background-color: #fff
-	border-color: #fff
-	
-.active-grey
-	.active
-		a
-			color: #393939
-	li
-		a:hover
-			color: darken(#393939 ,10%)
-	li.active
-		a:hover
-			color: #393939
-.border-grey
-	border: 2px solid #393939
+=menu-color($color, $drop-bg, $drop-color)
+	border: 2px solid $color
+	ul 
+		li.active 
+			a
+				color: $color
+			a:hover
+				color: #393939
+		li
+			a
+				color: #393939
+			a:hover
+				color: darken($color, 10%)
+	.nav-dropdown
+		background-color: $drop-bg
+		span
+			background-color: $drop-color
+.nav
+	&-grey
+		+menu-color(#393939,#fff,#393939)
+
+		
+
+

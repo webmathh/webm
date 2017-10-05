@@ -1,5 +1,5 @@
-mixin fixednav()
-	nav.nav-fixed.nav-white.active-grey.border-grey
+mixin fixednav(color)
+	nav.nav-fixed(class="nav-"+color)
 		ul
 			li.nav-logo
 				a(href="#")
@@ -16,7 +16,7 @@ mixin fixednav()
 					a(href="#") О компании
 			li.nav-phone
 				a(href="tel:+79780000000") 8 (495) 295-99-55
-			li.nav-dropdown.nav-dropdown_grey
+			li.nav-dropdown
 				span
 				span
 				span

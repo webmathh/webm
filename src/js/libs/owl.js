@@ -18,6 +18,20 @@ $('.company__slider').owlCarousel({
         }
     }
 });
+$('.case__slider').owlCarousel({
+    nav: false,
+    loop: true,
+    dots: false,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        1000: {
+            items: 2
+        }
+    }
+});
 var company = $('.company__slider').owlCarousel();
 $('.company__nav_right').click(function () {
     company.trigger('next.owl.carousel');

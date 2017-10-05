@@ -1,6 +1,6 @@
-mixin navmain()
+mixin navmain(color)
 	.container
-		nav.nav.nav-main.nav-white.active-grey.border-grey
+		nav.nav.nav-main(class="nav-"+color)
 			ul
 				li.active
 					a(href="#") Главная

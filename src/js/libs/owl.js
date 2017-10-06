@@ -39,3 +39,11 @@ $('.company__nav_right').click(function () {
 $('.company__nav_left').click(function () {
     company.trigger('prev.owl.carousel');
 });
+
+var cases =  $('.case__slider').owlCarousel();
+$('.case__nav_right').click(function () {
+    cases.trigger('next.owl.carousel');
+});
+$('.case__nav_left').click(function () {
+    cases.trigger('prev.owl.carousel');
+});

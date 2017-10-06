@@ -1,0 +1,602 @@
+
+<div class="modal modal_ask">
+  <div class="modal__wrapper">
+    <div class="modal__crosswrap">
+      <div class="modal__cross"><span></span><span></span></div>
+    </div>
+    <h2 class="modal__title">Мы отправим презентацию<br/>вам на е-майл в виде PDF файла.<br/>И вы сможете обдумать наше предложение</h2>
+    <div class="modal__form">
+      <form method="POST">
+        <div class="modal__item">
+          <input type="text" placeholder="Как к вам обращаться?" name="name" required="required" class="modal__input"/>
+        </div>
+        <div class="modal__item">
+          <input type="email" placeholder="Укажите свой действующией е-майл." name="email" required="required" class="modal__input"/>
+        </div>
+        <div class="modal__footer">
+          <p>Заполняя данную форму, вы принимаете условия “Соглашения об использовании сайта”, в том числе в части <a href="#">обработки персональных данных</a></p>
+        </div>
+        <div class="modal__button">
+          <input type="hidden" name="theme"/>
+          <button>Отправить</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div><!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <link rel="stylesheet" href="libs/components.css"/>
+    <link rel="stylesheet" href="style/styles.css"/>
+    <title>123</title>
+  </head>
+  <body style="background-color:#fff">
+    <div class="wrapper">
+      <div class="content">
+        <header class="head head-index bg-cover">
+          <div class="head__topline">
+            <div class="container-flex"><a href="#" class="logo logo-topline"><img src="img/logo.png" alt="logo"/>
+                <div class="logo__text">
+                  <div class="logo__top">ВебМатематика</div>
+                  <div class="logo__bottom">простые web решения<br/>сложных задач</div>
+                </div></a>
+              <div class="head__right">
+                <div class="head__button"><a href="#" data-theme="Вопрос" data-modal=".modal_ask" class="modal-open button button-red button-brs22 button-head">Спросить бесплатно</a></div>
+                <div class="head__phone"><a href="tel:000000000" class="phone-top">8 (495) 295-99-55</a>
+                  <div class="phone-callback">мы вам перезвоним</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <nav class="nav nav-main nav-grey">
+              <ul>
+                <li class="active"><a href="#">Главная</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Кейсы</a></li>
+                <li><a href="#">ИнфоБлог</a></li>
+                <li><a href="#">О компании</a></li>
+              </ul>
+            </nav>
+          </div>
+          <nav class="nav-fixed nav-grey">
+            <ul>
+              <li class="nav-logo"><a href="#"><img src="img/logo-mnu.png" alt="logo"/><span class="mobile-logo-text">ВебМатематика</span></a></li>
+              <ul>
+                <li class="active"><a href="#">Услуги</a></li>
+                <li><a href="#">Кейсы</a></li>
+                <li><a href="#">ИнфоБлог</a></li>
+                <li><a href="#">О компании</a></li>
+              </ul>
+              <li class="nav-phone"><a href="tel:+79780000000">8 (495) 295-99-55</a></li>
+              <li class="nav-dropdown"><span></span><span></span><span></span></li>
+            </ul>
+          </nav>
+          <div class="mobile-menu">
+            <div class="mobile-menu-top">
+              <div class="mobile-menu__wrap">
+                <div class="mobile-menu__logo"><a href="/"><img src="img/logo.png" alt="123"/></a></div>
+                <div class="mobile-menu__phone"><a href="tel:+7 (495) 295-99-55">+7 (495) 295-99-55</a>
+                  <p>мы вам перезвоним</p>
+                </div>
+                <div class="mobile-menu__cross"><span></span><span></span></div>
+              </div>
+            </div>
+            <div class="mobile-menu-list">
+              <nav>
+                <ul>
+                  <li class="drop-list mobile-menu_blue"><span>Услуги</span>
+                    <ul>
+                      <li><a href="#">Контакты</a></li>
+                      <li><a href="#">Партнеры</a></li>
+                    </ul>
+                  </li>
+                  <li class="drop-list mobile-menu_green"><span>Кейсы</span>
+                    <ul>
+                      <li><a href="#">Контакты</a></li>
+                      <li><a href="#">Партнеры</a></li>
+                    </ul>
+                  </li>
+                  <li class="drop-list mobile-menu_yellow"><span>ИнфоБлог</span>
+                    <ul>
+                      <li><a href="#">Контакты</a></li>
+                      <li><a href="#">Партнеры</a></li>
+                    </ul>
+                  </li>
+                  <li class="drop-list mobile-menu_brown"><span>О компании</span>
+                    <ul>
+                      <li><a href="#">Контакты</a></li>
+                      <li><a href="#">Партнеры</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="mobile-menu-footer">
+              <button data-theme="Вопрос" data-modal=".modal_ask" class="button button-red mobile-menu__button modal-open">Спросить бесплатно</button>
+            </div>
+          </div>
+          <div class="head__content">
+            <h1 class="head__content_title">Создаём, раскручиваем и поддерживаем <br/>сайты<br/>для любой сферы и любого бюджета.</h1>
+            <p class="head__content_blue">Первые <strong>клиенты</strong> уже завтра</p>
+            <p class="head__content_footer">Работаем по всей России и СНГ</p>
+            <button data-theme="Вопрос" data-modal=".modal_ask" class="button button-brs35 button-blue modal-open head__content_button">Узнать бесплатно</button>
+          </div>
+        </header>
+        <section class="works section">
+          <h2 class="h2 h2-dark">Для кого работаем</h2>
+          <div class="works__wrapper">
+            <div class="works__item works__item_green">
+              <div class="works__wrap">
+                <div class="works__left">
+                  <div class="works__img"><img src="img/ip.png" alt="Идивидуальный предприниматель"/></div>
+                  <h3 class="works__title">Идивидуальный предприниматель</h3>
+                </div>
+                <div class="works__right">
+                  <ul>
+                    <li>Участники ЦЕХА</li>
+                    <li>МЗС</li>
+                    <li>Тест ниши</li>
+                    <li>Участники Интенсива</li>
+                    <li>Переупаковка</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="works__footer">
+                <button data-color="green" data-title="Идивидуальный предприниматель" data-modal=".modal-presentation" data-theme="Получить презентацию Идивидуальный предприниматель" class="works__link modal-open">Получить презентацию</button>
+              </div>
+            </div>
+            <div class="works__item works__item_lazyre">
+              <div class="works__wrap">
+                <div class="works__left">
+                  <div class="works__img"><img src="img/gos.png" alt="Директор Гос учреждения"/></div>
+                  <h3 class="works__title">Директор Гос учреждения</h3>
+                </div>
+                <div class="works__right">
+                  <ul>
+                    <li>Участники ЦЕХА</li>
+                    <li>МЗС</li>
+                    <li>Тест ниши</li>
+                    <li>Участники Интенсива</li>
+                    <li>Переупаковка</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="works__footer">
+                <button data-color="lazyre" data-title="Директор Гос учреждения" data-modal=".modal-presentation" data-theme="Получить презентацию Директор Гос учреждения" class="works__link modal-open">Получить презентацию</button>
+              </div>
+            </div>
+            <div class="works__item works__item_blue">
+              <div class="works__wrap">
+                <div class="works__left">
+                  <div class="works__img"><img src="img/molod.png" alt="Участник бизнес молодости"/></div>
+                  <h3 class="works__title">Участник бизнес молодости</h3>
+                </div>
+                <div class="works__right">
+                  <ul>
+                    <li>Участники ЦЕХА</li>
+                    <li>МЗС</li>
+                    <li>Тест ниши</li>
+                    <li>Участники Интенсива</li>
+                    <li>Переупаковка</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="works__footer">
+                <button data-color="blue" data-title="Участник бизнес молодости" data-modal=".modal-presentation" data-theme="Получить презентацию Участник бизнес молодости" class="works__link modal-open">Получить презентацию</button>
+              </div>
+            </div>
+            <div class="works__item works__item_orange">
+              <div class="works__wrap">
+                <div class="works__left">
+                  <div class="works__img"><img src="img/sred.png" alt="Владелец среднего бизнеса"/></div>
+                  <h3 class="works__title">Владелец среднего бизнеса</h3>
+                </div>
+                <div class="works__right">
+                  <ul>
+                    <li>Участники ЦЕХА</li>
+                    <li>МЗС</li>
+                    <li>Тест ниши</li>
+                    <li>Участники Интенсива</li>
+                    <li>Переупаковка</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="works__footer">
+                <button data-color="orange" data-title="Владелец среднего бизнеса" data-modal=".modal-presentation" data-theme="Получить презентацию Владелец среднего бизнеса" class="works__link modal-open">Получить презентацию</button>
+              </div>
+            </div>
+            <div class="works__item works__item_red">
+              <div class="works__wrap">
+                <div class="works__left">
+                  <div class="works__img"><img src="img/krup.png" alt="Владелец крупного бизнеса"/></div>
+                  <h3 class="works__title">Владелец крупного бизнеса</h3>
+                </div>
+                <div class="works__right">
+                  <ul>
+                    <li>Участники ЦЕХА</li>
+                    <li>МЗС</li>
+                    <li>Тест ниши</li>
+                    <li>Участники Интенсива</li>
+                    <li>Переупаковка</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="works__footer">
+                <button data-color="red" data-title="Владелец крупного бизнеса" data-modal=".modal-presentation" data-theme="Получить презентацию Владелец крупного бизнеса" class="works__link modal-open">Получить презентацию</button>
+              </div>
+            </div>
+            <div class="works__item works__item_puple">
+              <div class="works__wrap">
+                <div class="works__left">
+                  <div class="works__img"><img src="img/not-know.png" alt="Не могу определиться"/></div>
+                  <h3 class="works__title">Не могу определиться</h3>
+                </div>
+                <div class="works__right">
+                  <ul>
+                    <li>Участники ЦЕХА</li>
+                    <li>МЗС</li>
+                    <li>Тест ниши</li>
+                    <li>Участники Интенсива</li>
+                    <li>Переупаковка</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="works__footer">
+                <button data-color="puple" data-title="Не могу определиться" data-modal=".modal-presentation" data-theme="Получить презентацию Не могу определиться" class="works__link modal-open">Получить презентацию</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section case">
+          <h2 class="h2 h2-white">Наши Кейсы</h2>
+          <div class="case__wrapper">
+            <div class="case__nav case__nav_left"></div>
+            <div class="case__nav case__nav_right"></div>
+            <div class="case__wrap">
+              <div class="case__slider owl-carousel owl-theme">
+                <div class="item">
+                  <div class="case__item"><img src="http://loremflickr.com/570/320" alt="123"/>
+                    <div class="case__footer">
+                      <h4 class="case__title">Сайт для стоматолога</h4><a href="#" class="case__button">подробнее</a>
+                    </div>
+                  </div>
+                  <div class="case__item"><img src="http://loremflickr.com/570/320" alt="123"/>
+                    <div class="case__footer">
+                      <h4 class="case__title">Сайт для стоматолога</h4><a href="#" class="case__button">подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="case__item"><img src="http://loremflickr.com/570/320" alt="123"/>
+                    <div class="case__footer">
+                      <h4 class="case__title">Сайт для стоматолога</h4><a href="#" class="case__button">подробнее</a>
+                    </div>
+                  </div>
+                  <div class="case__item"><img src="http://loremflickr.com/570/320" alt="123"/>
+                    <div class="case__footer">
+                      <h4 class="case__title">Сайт для стоматолога</h4><a href="#" class="case__button">подробнее</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rev__all case__all"><a href="#">все работы</a></div>
+        </section>
+        <section class="sites section">
+          <h2 class="h2 h2-dark">Какие сайты делаем</h2>
+          <div class="sites__wrapper">
+            <div class="sites__item">
+              <h3 class="sites__title">Сайт-визитка</h3>
+              <div class="sites__text">
+                <p>Сайт компании или специалиста решающий большинство задач связанных с интернетом.</p>
+              </div>
+              <div class="sites__price">От 22 700 руб.</div><a href="#" class="sites__button">Подробнее</a>
+            </div>
+            <div class="sites__item">
+              <h3 class="sites__title">Сайт-каталог</h3>
+              <div class="sites__text">
+                <p>Корпоративный сайт с возможностью демонстрации продукции и её характеристик.</p>
+              </div>
+              <div class="sites__price">От 29 700 руб.</div><a href="#" class="sites__button">Подробнее</a>
+            </div>
+            <div class="sites__item">
+              <h3 class="sites__title">Landing page</h3>
+              <div class="sites__text">
+                <p>Продающая страница,идеально подходит для продажи одного товара,группы товаров или услуги.</p>
+              </div>
+              <div class="sites__price">От 24 700 руб.</div><a href="#" class="sites__button">Подробнее</a>
+            </div>
+            <div class="sites__item">
+              <h3 class="sites__title">Интернет-магазин</h3>
+              <div class="sites__text">
+                <p>Полноценная площадка интернет торговли с возможностью онлайн оплаты и историей заказов.</p>
+              </div>
+              <div class="sites__price">От 39 700 руб.</div><a href="#" class="sites__button">Подробнее</a>
+            </div>
+            <div class="sites__item">
+              <h3 class="sites__title">Нет в списке? Не беда!</h3>
+              <div class="sites__text">
+                <p>За годы работы,приобретённый опыт,позволяет нам решить любую задачу клиента.</p>
+              </div>
+              <div class="sites__price">И есть ещё решения!</div><a href="#" class="sites__button">Подробнее</a>
+            </div>
+            <div class="sites__item">
+              <h3 class="sites__title">Эксклюзивное решение</h3>
+              <div class="sites__text">
+                <p>Сайт,разработанный под точные нужды клиента,без использования шаблонных или модульных решений.</p>
+              </div>
+              <div class="sites__price">От 100 000 руб.</div><a href="#" class="sites__button">Подробнее</a>
+            </div>
+          </div>
+        </section>
+        <section class="section company">
+          <h2 class="h2 h2-dark">С кем работали?</h2>
+          <div class="company__wrapper">
+            <div class="company__nav company__nav_left"><</div>
+            <div class="company__nav company__nav_right">></div>
+            <div class="company__wrap">
+              <div class="company__slider owl-carousel owl-theme">
+                <div class="item">
+                  <div class="company__container"><a href="#">
+                      <div class="company__img"><img src="http://loremflickr.com/170/170" alt="123"/></div>
+                      <div class="company__text">
+                        <h4>Центр “Мои документы”</h4>
+                      </div></a></div>
+                </div>
+                <div class="item">
+                  <div class="company__container"><a href="#">
+                      <div class="company__img"><img src="http://loremflickr.com/170/170" alt="123"/></div>
+                      <div class="company__text">
+                        <h4>Центр “Мои документы”</h4>
+                      </div></a></div>
+                </div>
+                <div class="item">
+                  <div class="company__container"><a href="#">
+                      <div class="company__img"><img src="http://loremflickr.com/170/170" alt="123"/></div>
+                      <div class="company__text">
+                        <h4>Центр “Мои документы”</h4>
+                      </div></a></div>
+                </div>
+                <div class="item">
+                  <div class="company__container"><a href="#">
+                      <div class="company__img"><img src="http://loremflickr.com/170/170" alt="123"/></div>
+                      <div class="company__text">
+                        <h4>Центр “Мои документы”</h4>
+                      </div></a></div>
+                </div>
+                <div class="item">
+                  <div class="company__container"><a href="#">
+                      <div class="company__img"><img src="http://loremflickr.com/170/170" alt="123"/></div>
+                      <div class="company__text">
+                        <h4>Центр “Мои документы”</h4>
+                      </div></a></div>
+                </div>
+                <div class="item">
+                  <div class="company__container"><a href="#">
+                      <div class="company__img"><img src="http://loremflickr.com/170/170" alt="123"/></div>
+                      <div class="company__text">
+                        <h4>Центр “Мои документы”</h4>
+                      </div></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rev__all"><a href="#">все клиенты</a></div>
+        </section>
+        <section class="section rev">
+          <h2 class="h2 h2-dark">Последние отзывы</h2>
+          <div class="rev__wrapper">
+            <div class="rev__item">
+              <div class="rev__text">
+                <p>  “Я вообще не люблю писать отзывы, так как считаю что все должны хорошо выполнять свою работу. Но тут не могла удержаться , меня аж тянуло рассказать всем как я довольна работой этой команды!</p>
+                <p>Надо сразу сказать что я, отвратительный заказчик, совершенно не понимала, что хочу. Сделайте что - нибудь , "ой фу, ну я же не этого хотела",  -  это именно обо мне. Думаю многие согласятся, что когда мы платим деньги, мы хотим получить что-то такое, что левая пятка захотела.”</p>
+              </div>
+              <div class="rev__footer">
+                <div class="rev__left">
+                  <div class="rev__img"><img src="http://loremflickr.com/100/100" alt="123"/></div>
+                </div>
+                <div class="rev__right">
+                  <div class="rev__top">
+                    <h4>Доктор Диана</h4>
+                    <p>стоматолог-терапевт</p>
+                  </div>
+                  <div class="rev__bottom">
+                    <div class="rev__file"><a href="http://loremflickr.com/800/800" class="rev__magnific"></a></div>
+                    <div class="rev__button"><a href="#" class="button button-rev">Весь отзыв</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rev__item">
+              <div class="rev__text">
+                <p>  “Я вообще не люблю писать отзывы, так как считаю что все должны хорошо выполнять свою работу. Но тут не могла удержаться , меня аж тянуло рассказать всем как я довольна работой этой команды!</p>
+                <p>Надо сразу сказать что я, отвратительный заказчик, совершенно не понимала, что хочу. Сделайте что - нибудь , "ой фу, ну я же не этого хотела",  -  это именно обо мне. Думаю многие согласятся, что когда мы платим деньги, мы хотим получить что-то такое, что левая пятка захотела.”</p>
+              </div>
+              <div class="rev__footer">
+                <div class="rev__left">
+                  <div class="rev__img"><img src="http://loremflickr.com/100/100" alt="123"/></div>
+                </div>
+                <div class="rev__right">
+                  <div class="rev__top">
+                    <h4>Доктор Диана</h4>
+                    <p>стоматолог-терапевт</p>
+                  </div>
+                  <div class="rev__bottom">
+                    <div class="rev__file"><a href="http://loremflickr.com/800/800" class="rev__magnific"></a></div>
+                    <div class="rev__button"><a href="#" class="button button-rev">Весь отзыв</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rev__item">
+              <div class="rev__text">
+                <p>  “Я вообще не люблю писать отзывы, так как считаю что все должны хорошо выполнять свою работу. Но тут не могла удержаться , меня аж тянуло рассказать всем как я довольна работой этой команды!</p>
+                <p>Надо сразу сказать что я, отвратительный заказчик, совершенно не понимала, что хочу. Сделайте что - нибудь , "ой фу, ну я же не этого хотела",  -  это именно обо мне. Думаю многие согласятся, что когда мы платим деньги, мы хотим получить что-то такое, что левая пятка захотела.”</p>
+              </div>
+              <div class="rev__footer">
+                <div class="rev__left">
+                  <div class="rev__img"><img src="http://loremflickr.com/100/100" alt="123"/></div>
+                </div>
+                <div class="rev__right">
+                  <div class="rev__top">
+                    <h4>Доктор Диана</h4>
+                    <p>стоматолог-терапевт</p>
+                  </div>
+                  <div class="rev__bottom">
+                    <div class="rev__file"><a href="http://loremflickr.com/800/800" class="rev__magnific"></a></div>
+                    <div class="rev__button"><a href="#" class="button button-rev">Весь отзыв</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rev__all"><a href="#">все отзывы</a></div>
+        </section>
+        <section class="section team">
+          <h2 class="h2 h2-dark">Команда</h2>
+          <div class="team__wrapper">
+            <div class="team__item">
+              <div class="team__imgwrap"><img src="http://loremflickr.com/270/270" alt="Алена Брежнева" class="team__img"/></div>
+              <div class="team__name"><strong>Алена Брежнева</strong></div>
+              <div class="team__position">
+                <p>SEO, ведение проектов</p>
+              </div>
+            </div>
+            <div class="team__item">
+              <div class="team__imgwrap"><img src="http://loremflickr.com/270/270" alt="Степан Кузовов" class="team__img"/></div>
+              <div class="team__name"><strong>Степан Кузовов</strong></div>
+              <div class="team__position">
+                <p>Разработка front, back - end</p>
+              </div>
+            </div>
+            <div class="team__item">
+              <div class="team__imgwrap"><img src="http://loremflickr.com/270/270" alt="Евгений Марков" class="team__img"/></div>
+              <div class="team__name"><strong>Евгений Марков</strong></div>
+              <div class="team__position">
+                <p>Дизайн, маркетинг</p>
+              </div>
+            </div>
+            <div class="team__item">
+              <div class="team__imgwrap"><img src="http://loremflickr.com/270/270" alt="Илья Федулов" class="team__img"/></div>
+              <div class="team__name"><strong>Илья Федулов</strong></div>
+              <div class="team__position">
+                <p>Фото, видео сопровождение</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section callback">
+          <div class="callback__wrapper"><strong class="callback__strong">Если не успеем в срок - вернём деньги!</strong>
+            <h2 class="callback__title">Отправьте заявку сейчас<br/>и получите оформление<br/>соц. сетей в подарок!</h2>
+            <form method="POST">
+              <div class="callback__form">
+                <div class="callback__item">
+                  <input type="text" placeholder="Обращение" name="name" required="required" class="callback__input"/>
+                </div>
+                <div class="callback__item">
+                  <input type="tel" placeholder="Телефон" name="tel" required="required" class="callback__input"/>
+                </div>
+                <div class="callback__item">
+                  <input type="email" placeholder="E-mail" name="email" required="required" class="callback__input"/>
+                </div>
+                <div class="callback__item">
+                  <button class="callback__button">Отправить</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+      <div class="footer">
+        <footer class="footer">
+          <div class="footer__wrapper">
+            <div class="footer__wrap">
+              <h4>Услуги</h4>
+              <ul>
+                <li><a href="#">Продвижение</a></li>
+                <li><a href="#">Сайт-визитка</a></li>
+                <li><a href="#">Продающий сайт</a></li>
+                <li><a href="#">Поддержка сайтов</a></li>
+                <li><a href="#">Стоимость работ</a></li>
+              </ul>
+            </div>
+            <div class="footer__wrap">
+              <h4>Кейсы</h4>
+              <ul>
+                <li><a href="#">Наши работы</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Клиенты</a></li>
+                <li><a href="#">Проекты</a></li>
+              </ul>
+            </div>
+            <div class="footer__wrap">
+              <h4>ИнфоБлог</h4>
+              <ul>
+                <li><a href="#">Статьи</a></li>
+                <li><a href="#">Для кого</a></li>
+                <li><a href="#">Разработка</a></li>
+                <li><a href="#">Что получаете?</a></li>
+                <li><a href="#">Мы можем</a></li>
+              </ul>
+            </div>
+            <div class="footer__wrap">
+              <h4>О компании</h4>
+              <ul>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Команда</a></li>
+                <li><a href="#">Партнёры</a></li>
+                <li><a href="#">Предложения</a></li>
+              </ul>
+            </div>
+            <div class="footer__wrap">
+              <h4>Мы в соц. сетях</h4>
+              <div class="footer__social"><a href="#"></a><a href="#"></a></div>
+            </div>
+            <div class="footer__wrap">
+              <h4>Москва:</h4>
+              <div class="footer__item"><a href="tel:8 (495) 295-99-55 " class="footer__phone">8 (495) 295-99-55</a></div>
+              <h4>Севастополь</h4>
+              <div class="footer__item"><a href="tel:8 (987) 295-99-55 " class="footer__phone">8 (987) 295-99-55</a></div>
+              <div class="footer__item"><a href="#">Политика <br/>конденциальности</a></div>
+              <div class="footer__item"><a href="#">Юридическая <br/>информация</a></div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <div class="modal modal-presentation">
+      <div class="modal__wrapper">
+        <div class="modal__crosswrap">
+          <div class="modal__cross"><span></span><span></span></div>
+        </div>
+        <h2 class="modal__title">Мы отправим презентацию<br/>вам на е-майл в виде PDF файла.<br/>И вы сможете обдумать наше предложение</h2>
+        <div class="modal__form">
+          <form method="POST">
+            <div class="modal__item">
+              <input type="text" placeholder="Как к вам обращаться?" name="name" required="required" class="modal__input"/>
+            </div>
+            <div class="modal__item">
+              <input type="email" placeholder="Укажите свой действующией е-майл." name="email" required="required" class="modal__input"/>
+            </div>
+            <div class="modal__footer">
+              <p>Заполняя данную форму, вы принимаете условия “Соглашения об использовании сайта”, в том числе в части <a href="#">обработки персональных данных</a></p>
+            </div>
+            <div class="modal__button">
+              <input type="hidden" name="theme"/>
+              <button>Отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="libs/components.js"></script>
+    <script type="text/javascript" src="js/libs.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

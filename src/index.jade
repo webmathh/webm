@@ -3,14 +3,15 @@ block includes
     include jade/mixins/**/*.jade
 block title
     title 123
-    - var back = '#fff';
-    - var navColor = 'grey';
+    - var back = '#4b5c50';
+    - var navColor = 'green';
 block content
-    +headindex(navColor)
-    +work
-    +case
-    +sites
-    +company
-    +revs
-    +teams
-    +section-form
+    header.head.head-second.bg-cover
+        .head__topline
+            .container-flex
+                +logo-topline
+                +righthead
+        +navmain(navColor)
+        +fixednav(navColor)
+        +mobile-menu
+    +breadcrumbs

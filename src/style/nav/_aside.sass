@@ -40,6 +40,16 @@
 			&.active
 				&::after
 					right: 0
+	&__footer
+		text-align: center
+		font-family: Candara, sans-serif
+		font-weight: 400
+		+fz(20)
+		padding-top: 40px
+		color: #fff
+		a
+			text-decoration: underline
+			color: #fff
 
 	&_green
 		background-color: #72a846
@@ -55,4 +65,39 @@
 				&.active
 					a
 						color: #4b5c50
+
+	&__bottom
+		background-color: #526b5a
+		-webkit-border-radius: 25px
+		-moz-border-radius: 25px
+		border-radius: 25px
+		padding: 30px
+		margin-top: 30px
+		p
+			font-family: Candara, sans-serif
+			font-weight: 400
+			color: #fff
+			+fz(20)
+			text-align: center
+
+		a
+			margin-top: 30px
+			-webkit-border-radius: 22px
+			-moz-border-radius: 22px
+			border-radius: 22px
+
+	&__wrapper
+		max-width: 1170px
+		width: 100%
+		margin: 0 auto
+		z-index: 4
+		transition: all .25s
+		&.fixed
+			position: fixed
+			top: 8%
+			left: 0
+			right: 0
+	&__wrap
+		max-width: 270px
+		width: 100%
 				

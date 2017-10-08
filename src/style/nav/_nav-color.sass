@@ -1,25 +1,55 @@
 =menu-color($color, $drop-bg, $drop-color)
 	border: 2px solid $color
-	ul 
-		li.active 
-			a
-				color: $color
-			a:hover
-				color: #393939
+	ul
 		li
 			a
 				color: #393939
 			a:hover
-				color: darken($color, 10%)
+				color: $color
 	.nav-dropdown
 		background-color: $drop-bg
 		span
 			background-color: $drop-color
 .nav
-	&-grey
-		+menu-color(#393939,#fff,#393939)
-	&-green
+	transition: all .25s
+	&[data-color=black]
+		+menu-color(#393939, #fff, #393939)
+	&[data-color=blue]
+		+menu-color(#4697a8, #4697a8, #fff)
+	&[data-color=green]
 		+menu-color(#72a846, #72a846, #fff)
+	&[data-color=yellow]
+		+menu-color(#deb04c , #deb04c, #fff)
+	&[data-color=red]
+		+menu-color(red, red, #fff)
+	li
+		a[data-color=black]
+			&:hover
+				color: #393939
+		a[data-color=blue]
+			&:hover
+				color: #4697a8
+		a[data-color=green]
+			&:hover
+				color: #72a846
+		a[data-color=yellow]
+			&:hover
+				color: #deb04c
+		a[data-color=red]
+			&:hover
+				color: red
+	li.active
+		a[data-color=black]
+			color: #393939
+		a[data-color=blue]
+			color: #4697a8
+		a[data-color=green]
+			color: #72a846
+		a[data-color=yellow]
+			color: #deb04c
+		a[data-color=red]
+			color: red
+
 
 		
 

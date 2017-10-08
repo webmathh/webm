@@ -43,3 +43,14 @@ $(document).scroll(function () {
         $('.aside__wrapper').removeClass('fixed');
     }
 });
+$('.nav').attr('data-color', $('.nav ul li.active a').attr('data-color'));
+$('.nav ul li a').hover(
+    function () {
+        var color = $(this).attr('data-color');
+        $('.nav').attr('data-color', color);
+    },
+    function () {
+        var color = $('.nav ul li.active a').attr('data-color');
+        $('.nav').attr('data-color', color);
+    }
+);

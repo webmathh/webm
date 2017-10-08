@@ -1,5 +1,5 @@
 mixin fixednav(color)
-	nav.nav-fixed(class="nav-"+color)
+	nav.nav-fixed.nav
 		ul
 			li.nav-logo
 				a(href="#")
@@ -7,13 +7,13 @@ mixin fixednav(color)
 					span.mobile-logo-text ВебМатематика
 			ul
 				li.active
-					a(href="#") Услуги
+					a(href="#" data-color="blue") Услуги
 				li
-					a(href="#") Кейсы
+					a(href="#" data-color="green") Кейсы
 				li
-					a(href="#") ИнфоБлог
+					a(href="#" data-color="yellow") ИнфоБлог
 				li
-					a(href="#") О компании
+					a(href="#" data-color="red") О компании
 			li.nav-phone
 				a(href="tel:+79780000000") 8 (495) 295-99-55
 			li.nav-dropdown

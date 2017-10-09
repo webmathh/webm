@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b7d228a-2514-41c9-bddf-fec4df01c119" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jade/mixins/works/work.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/style/works/_work.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/index.html" afterPath="$PROJECT_DIR$/build/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/components.css" afterPath="$PROJECT_DIR$/build/libs/components.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/components.js" afterPath="$PROJECT_DIR$/build/libs/components.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/style/styles.css" afterPath="$PROJECT_DIR$/build/style/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.jade" afterPath="$PROJECT_DIR$/src/index.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/style/nav/_aside.sass" afterPath="$PROJECT_DIR$/src/style/nav/_aside.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/style/nav/_nav-color.sass" afterPath="$PROJECT_DIR$/src/style/nav/_nav-color.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/style/styles.sass" afterPath="$PROJECT_DIR$/src/style/styles.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/style/system/_container.sass" afterPath="$PROJECT_DIR$/src/style/system/_container.sass" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/style/system/_content.sass" afterPath="$PROJECT_DIR$/src/style/system/_content.sass" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/style/works/_work.sass" afterPath="$PROJECT_DIR$/src/style/works/_work.sass" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -68,16 +58,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_content.sass" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/style/system/_content.sass">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.jade" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.jade">
           <provider selected="true" editor-type-id="text-editor">
@@ -111,8 +91,8 @@
       <file leaf-file-name="_work.sass" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/style/works/_work.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="823">
-              <caret line="101" column="40" lean-forward="false" selection-start-line="101" selection-start-column="40" selection-end-line="101" selection-end-column="40" />
+            <state relative-caret-position="691">
+              <caret line="130" column="22" lean-forward="false" selection-start-line="130" selection-start-column="22" selection-end-line="130" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -201,11 +181,11 @@
         <option value="$PROJECT_DIR$/src/style/nav/_aside.sass" />
         <option value="$PROJECT_DIR$/src/style/nav/_nav-color.sass" />
         <option value="$PROJECT_DIR$/src/style/styles.sass" />
-        <option value="$PROJECT_DIR$/src/style/system/_content.sass" />
         <option value="$PROJECT_DIR$/src/style/system/_container.sass" />
         <option value="$PROJECT_DIR$/src/jade/mixins/works/work.jade" />
         <option value="$PROJECT_DIR$/src/jade/mixins/index/headindex.jade" />
         <option value="$PROJECT_DIR$/src/index.jade" />
+        <option value="$PROJECT_DIR$/src/style/system/_content.sass" />
         <option value="$PROJECT_DIR$/src/style/works/_work.sass" />
       </list>
     </option>
@@ -717,12 +697,12 @@
       <workItem from="1507307294301" duration="2838000" />
       <workItem from="1507356080012" duration="5059000" />
       <workItem from="1507486242639" duration="2306000" />
-      <workItem from="1507552397886" duration="4760000" />
+      <workItem from="1507552397886" duration="5762000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95138000" />
+    <option name="totallyTimeSpent" value="96140000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1093,26 +1073,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/style/styles.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="39" column="16" lean-forward="false" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/style/system/_container.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/style/system/_content.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -1141,10 +1105,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/style/system/_content.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/style/styles.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="39" column="16" lean-forward="false" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/style/works/_work.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="823">
-          <caret line="101" column="40" lean-forward="false" selection-start-line="101" selection-start-column="40" selection-end-line="101" selection-end-column="40" />
+        <state relative-caret-position="691">
+          <caret line="130" column="22" lean-forward="false" selection-start-line="130" selection-start-column="22" selection-end-line="130" selection-end-column="22" />
           <folding />
         </state>
       </provider>

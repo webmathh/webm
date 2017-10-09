@@ -79,6 +79,7 @@
 	font-family: Candara, sans-serif
 	font-weight: bold
 	color: #FFFFFF
+	margin-bottom: 30px
 	h4
 		+fz(36)
 	p
@@ -100,3 +101,33 @@
 		transition: all .25s
 		&:hover
 			background-color: darken(#fff, 10%)
+
+@media screen and (max-width: 992px)
+	.work
+		&_small
+			width: 31%
+			flex-basis: 31%
+@media screen and (max-width: 768px)
+	.work
+		&_small
+			flex-basis: 48%
+			width: 48%
+		&_middle
+			width: 48%
+			flex-basis: 48%
+		&_big
+			width: 100%
+			flex-basis: 100%
+		&__callback
+			width: 100%
+			flex-basis: 100%
+@media screen and (max-width: 450px)
+	.work
+		&_small
+			flex-basis: 100%
+			width: 100%
+		&_middle
+			width: 100%
+			flex-basis: 100%
+
+

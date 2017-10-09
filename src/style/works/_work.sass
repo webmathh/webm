@@ -1,0 +1,102 @@
+.work
+	-webkit-border-radius: 25px
+	-moz-border-radius: 25px
+	border-radius: 25px
+	transition: all .25s
+	overflow: hidden
+	text-decoration: none
+	margin-bottom: 30px
+
+	&_full
+		background-color: #fff
+		.work__img
+			border-top-left-radius: 25px
+			border-top-right-radius: 25px
+		.work__text
+			h4
+				color: #393939
+			p
+				color: #393939
+		&:hover
+			box-shadow: 0px 4px 8px 0 rgba(0, 0, 1, 0.4)
+
+	&_empty
+		.work__img
+			-webkit-border-radius: 25px
+			-moz-border-radius: 25px
+			border-radius: 25px
+			overflow: hidden
+			transition: all .25s
+		.work__text
+			h4
+				color: #FFFFFF
+			p
+				color: #FFFFFF
+		&:hover
+			.work__img
+				box-shadow: 0px 4px 8px 0 rgba(0, 0, 1, 0.4)
+
+
+
+
+	&_middle
+		width: 43%
+		flex-basis: 43%
+	&_big
+		width: 53%
+		flex-basis: 53%
+	&_small
+		width: 30%
+		flex-basis: 30%
+
+	&__img
+		img
+			width: 100%
+			height: auto
+	&__text
+		padding: 20px 15px
+		h4
+			font-family: Candara, sans-serif
+			+fz(24)
+			font-weight: bold
+			line-height: 1.2
+
+		p
+			font-family: Candara, sans-serif
+			font-weight: 400
+			padding-top: 10px
+			+fz(20)
+			line-height: 1.2
+
+.work__callback
+	width: 53%
+	flex-basis: 53%
+	background-color: #72a846
+	-webkit-border-radius: 25px
+	-moz-border-radius: 25px
+	border-radius: 25px
+	padding: 40px 50px
+	font-family: Candara, sans-serif
+	font-weight: bold
+	color: #FFFFFF
+	h4
+		+fz(36)
+	p
+		padding-top: 15px
+		+fz(24)
+	button
+		-webkit-border-radius: 25px
+		-moz-border-radius: 25px
+		border-radius: 25px
+		margin-top: 30px
+		max-width: 270px
+		width: 100%
+		height: 50px
+		background-color: #fff
+		cursor: pointer
+		+fz(20)
+		+ffg
+		color: #393939
+		transition: all .25s
+		&:hover
+			background-color: darken(#fff, 10%)

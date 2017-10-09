@@ -14,3 +14,17 @@
 	width: 100%
 	position: relative
 	padding-left: 30px
+
+.content
+	&__title
+		padding-bottom: 30px
+		text-align: center
+		+ffg
+		+fz(30)
+		letter-spacing: 0.9px
+		&_white
+			color: #fff
+
+@media screen and (max-width: 1170px)
+	.content__left
+		display: none

@@ -1,0 +1,43 @@
+.teams
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+	margin-bottom: 50px
+	&__img
+		width: 270px
+		height: 270px
+		-webkit-border-radius: 10em
+		-moz-border-radius: 10em
+		border-radius: 10em
+		overflow: hidden
+		img
+			width: 100%
+			height: auto
+			-webkit-border-radius: 10em
+			-moz-border-radius: 10em
+			border-radius: 10em
+			vertical-align: top
+	&__right
+		width: 100%
+		padding-left: 50px
+	&__title
+		+ffg
+		+fz(24)
+		color: #393939
+
+	p
+		color: #909090
+		font-family: Candara, sans-serif
+		+fz(20)
+		&.teams__position
+			padding: 12px 0
+			color: #a84646
+
+@media screen and (max-width: 650px)
+	.teams
+		display: block
+		&__img
+			margin: 0 auto
+			margin-bottom: 20px
+		&__right
+			padding-left: 0

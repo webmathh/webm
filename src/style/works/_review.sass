@@ -1,0 +1,55 @@
+.review
+	width: 48%
+	flex-basis: 48%
+	margin-bottom: 30px
+	background-color: #f2f2f2
+	padding: 20px 10px
+	&__text
+		font-family: Candara, sans-serif
+		color: #393939
+		+fz(18)
+		p
+			padding-top: 10px
+			&:first-child
+				padding-top: 0
+			&:first-letter
+				padding-left: 20px
+	&__img
+		width: 70px
+		height: 70px
+		overflow: hidden
+		margin: 30px auto 20px
+		-webkit-border-radius: 10em
+		-moz-border-radius: 10em
+		border-radius: 10em
+		img
+			width: 100%
+			height: auto
+			-webkit-border-radius: 10em
+			-moz-border-radius: 10em
+			border-radius: 10em
+	&__footer
+		font-family: Candara, sans-serif
+		+fz(20)
+		h3
+			color: #393939
+			font-weight: bold
+			margin-bottom: 10px
+		.review
+			&__name
+				color: #172a2f
+			&__prof
+				margin-bottom: 20px
+				color: #526b5a
+			&__link
+				color: #393939
+				margin-bottom: 10px
+			&__href
+				color: #393939
+				&:hover
+					color: darken(#393939, 10%)
+
+@media screen and (max-width: 992px)
+	.review
+		width: 100%
+		flex-basis: 100%

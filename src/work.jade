@@ -1,0 +1,41 @@
+extends jade/template
+block includes
+    include jade/mixins/**/*.jade
+block title
+    title 123
+    - var back = '#4b5c50';
+    - var navColor = 'green';
+block content
+    header.head.head-second.bg-cover
+        .head__topline
+            .container-flex
+                +logo-topline
+                +righthead
+        +navmain(navColor)
+        +fixednav(navColor)
+        +mobile-menu
+    +breadcrumbs
+    .content__wrap
+        .content__left
+            .aside__wrapper
+                .aside__wrap
+                    +aside(navColor)
+                    .aside__bottom
+                        p Вы можете получить анализ своего сайта совершенно бесплатно!
+                        a(data-theme='Вопрос' data-modal='.modal_ask' href="#").modal-open.button.button-red.button-head Получить бесплатно
+        .content__right
+            h1.content__title.content__title_white Наши работы
+            .container-flex.container-work
+                +page-work('full', 'middle')
+                +page-work('full', 'big')
+                +page-work('empty', 'small')
+                +page-work('empty', 'small')
+                +page-work('empty', 'small')
+                +page-work('full', 'big')
+                +page-work('empty', 'middle')
+                +page-work('empty', 'middle')
+                .work__callback
+                    h4 Хотите попасть сюда?
+                    p От нас: <br/>- команда профессионалов<br/>- приятные эмоции<br/>- ответственность
+                    p От вас:
+                    button.button.modal-open(data-theme='Вопрос' data-modal='.modal_ask') Отправить заявку

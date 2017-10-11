@@ -16,6 +16,76 @@
 .container-work
 	align-items: flex-start
 	flex-wrap: wrap
+.container-text
+	+clearfix
+	display: block
+	font-family: Candara, sans-serif
+	color: #393939
+	margin-bottom: 40px
+	img
+		max-width: 100%
+		height: auto
+		vertical-align: top
+		&.img_left
+			padding-right: 40px
+		&.img_right
+			padding-left: 40px
+	p
+		padding-bottom: 15px
+		+fz(20)
+	ul
+		padding-left: 20px
+		+fz(20)
+	b
+		+fz(20)
+	strong
+		+fz(20)
+	h2
+		+fz(22)
+		padding-bottom: 20px
+	h3
+		+fz(21)
+		padding-bottom: 20px
+	h4
+		+fz(19)
+		padding-bottom: 20px
+	h5
+		+fz(17)
+		padding-bottom: 20px
+
+
+.container__buttons
+	display: inline-block
+	margin-top: 60px
+	max-width: (520+30)+0px
+	width: 100%
+	margin-bottom: 40px
+	button
+		width: 250px
+		height: 50px
+		line-height: 50px
+		-webkit-border-radius: 25px
+		-moz-border-radius: 25px
+		border-radius: 25px
+		transition: all .25s
+		cursor: pointer
+		+fz(20)
+		+ffg
+		letter-spacing: 0.2px
+	.button_left
+		border: solid 1px #393939
+		background-color: #fff
+		margin-right: 30px
+		color: #393939
+		&:hover
+			background-color: darken(#fff, 10%)
+	.button_right
+		background-color: #a84646
+		color: #FFFFFF
+		&:hover
+			background-color: darken(#a84646, 10%)
+
+
 
 @media screen and (max-width: 1170px)
 	.container, .container-flex

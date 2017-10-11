@@ -1,0 +1,41 @@
+extends jade/template
+block includes
+	include jade/mixins/**/*.jade
+block title
+	title 123
+	- var back = '#5c4b51';
+	- var navColor = 'green';
+block content
+	header.head.head-second.bg-cover
+		.head__topline
+			.container-flex
+				+logo-topline
+				+righthead
+		+navmain(navColor)
+		+fixednav(navColor)
+		+mobile-menu
+	+breadcrumbs
+	.content__wrap
+		.content__left
+			.aside__wrapper
+				.aside__wrap
+					+aside(navColor)
+					.aside__bottom
+						p Вы можете получить анализ своего сайта совершенно бесплатно!
+						a(data-theme='Вопрос' data-modal='.modal_ask' href="#").modal-open.button.button-red.button-head Получить бесплатно
+		.content__right
+			h1.content__title.content__title_white Предложения
+			.container-flex.container-work
+				+offer
+				+offer
+				+offer
+				.work__callback.work__callback_small
+					h4 У вас есть предложение по сотрудничеству?<br/>Свяжитесь с нами:
+					button.button.modal-open(data-theme='Вопрос' data-modal='.modal_ask') Отправить предложение
+
+mixin offer()
+	a(href="#" class="work work__offer")
+		.work__img
+			img(src="http://loremflickr.com/370/260")
+		.work__text.work__text_offer
+			h4 Стоматолог Доктор Диана

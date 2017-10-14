@@ -7,7 +7,14 @@
 		transition: all .25s
 		&:hover
 			color: darken(#ffffff , 10%)
+		&_dark
+			color: #393939
+			&:hover
+				color: darken(#393939, 10%)
 	&-callback
 		+ffg
 		+fz(18)
 		color: #8cccdd
+
+.modal-open
+	cursor: pointer

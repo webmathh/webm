@@ -9,8 +9,8 @@ block content
 	header.head.head-second.bg-cover
 		.head__topline
 			.container-flex
-				+logo-topline
-				+righthead
+				+logo-toplinedark
+				+rightheaddark
 		+navmain(navColor)
 		+fixednav(navColor)
 		+mobile-menu
@@ -43,18 +43,17 @@ block content
 				h2 Как это работает?
 				p Мы с командой определяем, что в приоритете для клиента, подбираем оптимальный вариант работы, запускаем тестовую страницу и занимаемся продвижением в социальных медиа.
 				p Клиент видит нашу работу уже в первые дни. По мере роста проекта, вносим измененияи добавляем необходимые функции для увеличения посетителей, конверсии и эффективностиработы, как сайта, так и всего бизнеса.
-				.container__form
-					form(method='post')
-						h2 Хотите стать нашим партнёром?<br/>Оставьте заявку <br/>и наш специалист свяжется с вами.
-						.form__item
-							input(type='text' placeholder='Как к вам обращаться?')
-						.form__item
-							input(type='text' placeholder='Как с вами лучше связаться?')
-						.form__item
-							textarea(placeholder='Опишите кратко о себе и своём бизнесе.')
-						.form__item
-							p Заполняя данную форму, вы принимаете условия “Соглашения об использовании сайта”, в том числе в части <a href="#">обработки персональных данных</a>
-						.form__item
-							button Отправить
-
+			.container__form
+				.callback__wrapper
+					h2.callback__title.callback__title_dark Хотите стать нашим партнёром?<br/>Оставьте заявку<br/>и наш специалист свяжется с вами.
+					form(method="POST")
+						.callback__form
+							.callback__item
+								input(type="text" placeholder="Обращение" name="name" required).callback__input.callback__input_dark
+							.callback__item
+								input(type="tel" placeholder="Телефон" name="tel" required).callback__input.callback__input_dark
+							.callback__item
+								textarea(name='text' placeholder='Опишите кратко о себе и своём бизнесе.').callback__input.callback__textarea.callback__input_dark
+							.callback__item
+								button.callback__button.callback__button_green Отправить
 

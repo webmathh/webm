@@ -16,6 +16,8 @@
 .container-work
 	align-items: flex-start
 	flex-wrap: wrap
+
+
 .container-text
 	+clearfix
 	display: block
@@ -90,3 +92,12 @@
 @media screen and (max-width: 1170px)
 	.container, .container-flex
 		padding: 0 20px
+
+@media screen and (max-width: 768px)
+	.container-text
+		img
+			width: 100%
+			&.img_left
+				padding-right: 0px
+			&.img_right
+				padding-left: 0px

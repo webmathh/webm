@@ -1,5 +1,5 @@
 mixin modal
-	.modal.modal-presentation
+	.modal.modal_presentation
 		.modal__wrapper
 			.modal__crosswrap
 				.modal__cross
@@ -17,22 +17,140 @@ mixin modal
 					.modal__button
 						input(type="hidden" name="theme")
 						button Отправить
-.modal.modal_ask
-	.modal__wrapper
-		.modal__crosswrap
-			.modal__cross
-				span
-				span
-		h2.modal__title Мы отправим презентацию<br/>вам на е-майл в виде PDF файла.<br/>И вы сможете обдумать наше предложение
-		.modal__form
-			form(method="POST")
-				.modal__item
-					input(type="text" placeholder="Как к вам обращаться?" name="name" required).modal__input
-				.modal__item
-					input(type="email" placeholder="Укажите свой действующией е-майл." name="email" required).modal__input
-				.modal__footer
-					p Заполняя данную форму, вы принимаете условия “Соглашения об использовании сайта”, в том числе в части <a href="#">обработки персональных данных</a>
-				.modal__button
-					input(type="hidden" name="theme")
-					button Отправить
+	.modal.modal_ask
+		.modal__wrapper
+			.modal__crosswrap
+				.modal__cross
+					span
+					span
+			h2.modal__title Мы отправим презентацию<br/>вам на е-майл в виде PDF файла.<br/>И вы сможете обдумать наше предложение
+			.modal__form
+				form(method="POST")
+					.modal__item
+						input(type="text" placeholder="Как к вам обращаться?" name="name" required).modal__input
+					.modal__item
+						input(type="email" placeholder="Укажите свой действующией е-майл." name="email" required).modal__input
+					.modal__footer
+						p Заполняя данную форму, вы принимаете условия “Соглашения об использовании сайта”, в том числе в части <a href="#">обработки персональных данных</a>
+					.modal__button
+						input(type="hidden" name="theme")
+						button Отправить
+	.modal.modal_callback
+		.modal__wrapper
+			.modal__crosswrap
+				.modal__cross
+					span
+					span
+			h2.modal__title Укажите свои данные и мы свяжемся с вами
+			.modal__form
+				form(method="POST")
+					.modal__item
+						input(type="text" placeholder="Как к вам обращаться?" name="name" required).modal__input
+					.modal__item
+						input(type="tel" placeholder="Укажите свой телефон." name="tel" required).modal__input
+					.modal__item
+						textarea(placeholder="Укажите дополнтительные данные(удобное время для звонка и т.д.)." name="text" required).modal__input.modal__textarea
+					.modal__footer
+						p Заполняя данную форму, вы принимаете условия “Соглашения об использовании сайта”, в том числе в части <a href="#">обработки персональных данных</a>
+					.modal__button
+						input(type="hidden" name="theme")
+						button Отправить
+	.modal.modal_first
+		.modal__wrapper
+			.modal__crosswrap
+				.modal__cross
+					span
+					span
+			h2.modal__title Укажите свои данные и мы свяжемся с вами
+			.modal__form
+				form(method="POST")
+					.modal__item
+						input(type="text" placeholder="Как к вам обращаться?" name="name" required).modal__input
+					.modal__item
+						input(type="text" placeholder="Удобный способ связи" name="callback" required).modal__input
+					.modal__footer
+						p Заполняя данную форму, вы принимаете условия “Соглашения об использовании сайта”, в том числе в части <a href="#">обработки персональных данных</a>
+					.modal__button
+						input(type="hidden" name="theme")
+						button Отправить
+	.modal.modal_second
+		.modal__wrapper
+			.modal__crosswrap
+				.modal__cross
+					span
+					span
+			h2.modal__title Укажите свои данные и мы свяжемся с вами
+			.modal__form
+				form(method="POST")
+					.modal__item
+						input(type="text" placeholder="Как к вам обращаться?" name="name" required).modal__input
+					.modal__item
+						input(type="text" placeholder="Удобный способ связи" name="callback" required).modal__input
+					.modal__item
+						textarea(placeholder="Коментарий" name="text" required).modal__input.modal__textarea
+					.modal__footer
+						p Заполняя данную форму, вы принимаете условия “Соглашения об использовании сайта”, в том числе в части <a href="#">обработки персональных данных</a>
+					.modal__button
+						input(type="hidden" name="theme")
+						button Отправить
+	.modal.modal_third
+		.modal__wrapper
+			.modal__crosswrap
+				.modal__cross
+					span
+					span
+			h2.modal__title Укажите свои данные и мы свяжемся с вами
+			.modal__form
+				form(method="POST")
+					.modal__item
+						input(type="text" placeholder="Как к вам обращаться?" name="name" required).modal__input
+					.modal__item
+						input(type="email" placeholder="Укажите свой действующией е-майл." name="email" required).modal__input
+					.modal__footer
+						p Заполняя данную форму, вы принимаете условия “Соглашения об использовании сайта”, в том числе в части <a href="#">обработки персональных данных</a>
+					.modal__button
+						input(type="hidden" name="theme")
+						button Отправить
+	.modal.modal_fourth
+		.modal__wrapper
+			.modal__crosswrap
+				.modal__cross
+					span
+					span
+			h2.modal__title Укажите свои данные и мы свяжемся с вами
+			.modal__form
+				form(method="POST")
+					.modal__item
+						input(type="text" placeholder="Как к вам обращаться?" name="name" required).modal__input
+					.modal__item
+						input(type="text" placeholder="Удобный способ связи" name="callback" required).modal__input
+					.modal__item
+						input(type="text" placeholder="Ссылка на сайт" name="site" required).modal__input
+					.modal__item
+						textarea(placeholder="Коментарий" name="text" required).modal__input.modal__textarea
+					.modal__footer
+						p Заполняя данную форму, вы принимаете условия “Соглашения об использовании сайта”, в том числе в части <a href="#">обработки персональных данных</a>
+					.modal__button
+						input(type="hidden" name="theme")
+						button Отправить
+	.modal.modal_fiveth
+		.modal__wrapper
+			.modal__crosswrap
+				.modal__cross
+					span
+					span
+			h2.modal__title Укажите свои данные и мы свяжемся с вами
+			.modal__form
+				form(method="POST")
+					.modal__item
+						input(type="text" placeholder="Как к вам обращаться?" name="name" required).modal__input
+					.modal__item
+						input(type="text" placeholder="Удобный способ связи" name="callback" required).modal__input
+					.modal__item
+						textarea(placeholder="Поле для вопроса" name="text" required).modal__input.modal__textarea
+					.modal__footer
+						p Заполняя данную форму, вы принимаете условия “Соглашения об использовании сайта”, в том числе в части <a href="#">обработки персональных данных</a>
+					.modal__button
+						input(type="hidden" name="theme")
+						button Отправить
 

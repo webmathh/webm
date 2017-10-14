@@ -4,4 +4,11 @@ mixin righthead()
 			a(href="#").modal-open.button.button-red.button-brs22.button-head(data-theme='Вопрос' data-modal='.modal_ask') Спросить бесплатно
 		.head__phone
 			a(href="tel:000000000").phone-top 8 (495) 295-99-55
-			.phone-callback мы вам перезвоним
+			.phone-callback.modal-open(data-modal=".modal_callback" data-theme='Вопрос') мы вам перезвоним
+mixin rightheaddark()
+	.head__right
+		.head__button
+			a(href="#").modal-open.button.button-red.button-brs22.button-head(data-theme='Вопрос' data-modal='.modal_ask') Спросить бесплатно
+		.head__phone
+			a(href="tel:000000000").phone-top.phone-top_dark 8 (495) 295-99-55
+			.phone-callback.modal-open(data-modal=".modal_callback" data-theme='Вопрос') мы вам перезвоним

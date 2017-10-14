@@ -1,29 +1,4 @@
-
-<div class="modal modal_ask">
-  <div class="modal__wrapper">
-    <div class="modal__crosswrap">
-      <div class="modal__cross"><span></span><span></span></div>
-    </div>
-    <h2 class="modal__title">Мы отправим презентацию<br/>вам на е-майл в виде PDF файла.<br/>И вы сможете обдумать наше предложение</h2>
-    <div class="modal__form">
-      <form method="POST">
-        <div class="modal__item">
-          <input type="text" placeholder="Как к вам обращаться?" name="name" required="required" class="modal__input"/>
-        </div>
-        <div class="modal__item">
-          <input type="email" placeholder="Укажите свой действующией е-майл." name="email" required="required" class="modal__input"/>
-        </div>
-        <div class="modal__footer">
-          <p>Заполняя данную форму, вы принимаете условия “Соглашения об использовании сайта”, в том числе в части <a href="#">обработки персональных данных</a></p>
-        </div>
-        <div class="modal__button">
-          <input type="hidden" name="theme"/>
-          <button>Отправить</button>
-        </div>
-      </form>
-    </div>
-  </div>
-</div><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8"/>
@@ -46,7 +21,7 @@
               <div class="head__right">
                 <div class="head__button"><a href="#" data-theme="Вопрос" data-modal=".modal_ask" class="modal-open button button-red button-brs22 button-head">Спросить бесплатно</a></div>
                 <div class="head__phone"><a href="tel:000000000" class="phone-top">8 (495) 295-99-55</a>
-                  <div class="phone-callback">мы вам перезвоним</div>
+                  <div data-modal=".modal_callback" data-theme="Вопрос" class="phone-callback modal-open">мы вам перезвоним</div>
                 </div>
               </div>
             </div>
@@ -147,7 +122,7 @@
                 </div>
               </div>
               <div class="works__footer">
-                <button data-color="green" data-title="Идивидуальный предприниматель" data-modal=".modal-presentation" data-theme="Получить презентацию Идивидуальный предприниматель" class="works__link modal-open">Получить презентацию</button>
+                <button data-color="green" data-title="Идивидуальный предприниматель" data-modal=".modal_presentation" data-theme="Получить презентацию Идивидуальный предприниматель" class="works__link modal-open">Получить презентацию</button>
               </div>
             </div>
             <div class="works__item works__item_lazyre">
@@ -167,7 +142,7 @@
                 </div>
               </div>
               <div class="works__footer">
-                <button data-color="lazyre" data-title="Директор Гос учреждения" data-modal=".modal-presentation" data-theme="Получить презентацию Директор Гос учреждения" class="works__link modal-open">Получить презентацию</button>
+                <button data-color="lazyre" data-title="Директор Гос учреждения" data-modal=".modal_presentation" data-theme="Получить презентацию Директор Гос учреждения" class="works__link modal-open">Получить презентацию</button>
               </div>
             </div>
             <div class="works__item works__item_blue">
@@ -187,7 +162,7 @@
                 </div>
               </div>
               <div class="works__footer">
-                <button data-color="blue" data-title="Участник бизнес молодости" data-modal=".modal-presentation" data-theme="Получить презентацию Участник бизнес молодости" class="works__link modal-open">Получить презентацию</button>
+                <button data-color="blue" data-title="Участник бизнес молодости" data-modal=".modal_presentation" data-theme="Получить презентацию Участник бизнес молодости" class="works__link modal-open">Получить презентацию</button>
               </div>
             </div>
             <div class="works__item works__item_orange">
@@ -207,7 +182,7 @@
                 </div>
               </div>
               <div class="works__footer">
-                <button data-color="orange" data-title="Владелец среднего бизнеса" data-modal=".modal-presentation" data-theme="Получить презентацию Владелец среднего бизнеса" class="works__link modal-open">Получить презентацию</button>
+                <button data-color="orange" data-title="Владелец среднего бизнеса" data-modal=".modal_presentation" data-theme="Получить презентацию Владелец среднего бизнеса" class="works__link modal-open">Получить презентацию</button>
               </div>
             </div>
             <div class="works__item works__item_red">
@@ -227,7 +202,7 @@
                 </div>
               </div>
               <div class="works__footer">
-                <button data-color="red" data-title="Владелец крупного бизнеса" data-modal=".modal-presentation" data-theme="Получить презентацию Владелец крупного бизнеса" class="works__link modal-open">Получить презентацию</button>
+                <button data-color="red" data-title="Владелец крупного бизнеса" data-modal=".modal_presentation" data-theme="Получить презентацию Владелец крупного бизнеса" class="works__link modal-open">Получить презентацию</button>
               </div>
             </div>
             <div class="works__item works__item_puple">
@@ -247,7 +222,7 @@
                 </div>
               </div>
               <div class="works__footer">
-                <button data-color="puple" data-title="Не могу определиться" data-modal=".modal-presentation" data-theme="Получить презентацию Не могу определиться" class="works__link modal-open">Получить презентацию</button>
+                <button data-color="puple" data-title="Не могу определиться" data-modal=".modal_presentation" data-theme="Получить презентацию Не могу определиться" class="works__link modal-open">Получить презентацию</button>
               </div>
             </div>
           </div>
@@ -570,7 +545,7 @@
         </footer>
       </div>
     </div>
-    <div class="modal modal-presentation">
+    <div class="modal modal_presentation">
       <div class="modal__wrapper">
         <div class="modal__crosswrap">
           <div class="modal__cross"><span></span><span></span></div>
@@ -583,6 +558,196 @@
             </div>
             <div class="modal__item">
               <input type="email" placeholder="Укажите свой действующией е-майл." name="email" required="required" class="modal__input"/>
+            </div>
+            <div class="modal__footer">
+              <p>Заполняя данную форму, вы принимаете условия “Соглашения об использовании сайта”, в том числе в части <a href="#">обработки персональных данных</a></p>
+            </div>
+            <div class="modal__button">
+              <input type="hidden" name="theme"/>
+              <button>Отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal_ask">
+      <div class="modal__wrapper">
+        <div class="modal__crosswrap">
+          <div class="modal__cross"><span></span><span></span></div>
+        </div>
+        <h2 class="modal__title">Мы отправим презентацию<br/>вам на е-майл в виде PDF файла.<br/>И вы сможете обдумать наше предложение</h2>
+        <div class="modal__form">
+          <form method="POST">
+            <div class="modal__item">
+              <input type="text" placeholder="Как к вам обращаться?" name="name" required="required" class="modal__input"/>
+            </div>
+            <div class="modal__item">
+              <input type="email" placeholder="Укажите свой действующией е-майл." name="email" required="required" class="modal__input"/>
+            </div>
+            <div class="modal__footer">
+              <p>Заполняя данную форму, вы принимаете условия “Соглашения об использовании сайта”, в том числе в части <a href="#">обработки персональных данных</a></p>
+            </div>
+            <div class="modal__button">
+              <input type="hidden" name="theme"/>
+              <button>Отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal_callback">
+      <div class="modal__wrapper">
+        <div class="modal__crosswrap">
+          <div class="modal__cross"><span></span><span></span></div>
+        </div>
+        <h2 class="modal__title">Укажите свои данные и мы свяжемся с вами</h2>
+        <div class="modal__form">
+          <form method="POST">
+            <div class="modal__item">
+              <input type="text" placeholder="Как к вам обращаться?" name="name" required="required" class="modal__input"/>
+            </div>
+            <div class="modal__item">
+              <input type="tel" placeholder="Укажите свой телефон." name="tel" required="required" class="modal__input"/>
+            </div>
+            <div class="modal__item">
+              <textarea placeholder="Укажите дополнтительные данные(удобное время для звонка и т.д.)." name="text" required="required" class="modal__input modal__textarea"></textarea>
+            </div>
+            <div class="modal__footer">
+              <p>Заполняя данную форму, вы принимаете условия “Соглашения об использовании сайта”, в том числе в части <a href="#">обработки персональных данных</a></p>
+            </div>
+            <div class="modal__button">
+              <input type="hidden" name="theme"/>
+              <button>Отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal_first">
+      <div class="modal__wrapper">
+        <div class="modal__crosswrap">
+          <div class="modal__cross"><span></span><span></span></div>
+        </div>
+        <h2 class="modal__title">Укажите свои данные и мы свяжемся с вами</h2>
+        <div class="modal__form">
+          <form method="POST">
+            <div class="modal__item">
+              <input type="text" placeholder="Как к вам обращаться?" name="name" required="required" class="modal__input"/>
+            </div>
+            <div class="modal__item">
+              <input type="text" placeholder="Удобный способ связи" name="callback" required="required" class="modal__input"/>
+            </div>
+            <div class="modal__footer">
+              <p>Заполняя данную форму, вы принимаете условия “Соглашения об использовании сайта”, в том числе в части <a href="#">обработки персональных данных</a></p>
+            </div>
+            <div class="modal__button">
+              <input type="hidden" name="theme"/>
+              <button>Отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal_second">
+      <div class="modal__wrapper">
+        <div class="modal__crosswrap">
+          <div class="modal__cross"><span></span><span></span></div>
+        </div>
+        <h2 class="modal__title">Укажите свои данные и мы свяжемся с вами</h2>
+        <div class="modal__form">
+          <form method="POST">
+            <div class="modal__item">
+              <input type="text" placeholder="Как к вам обращаться?" name="name" required="required" class="modal__input"/>
+            </div>
+            <div class="modal__item">
+              <input type="text" placeholder="Удобный способ связи" name="callback" required="required" class="modal__input"/>
+            </div>
+            <div class="modal__item">
+              <textarea placeholder="Коментарий" name="text" required="required" class="modal__input modal__textarea"></textarea>
+            </div>
+            <div class="modal__footer">
+              <p>Заполняя данную форму, вы принимаете условия “Соглашения об использовании сайта”, в том числе в части <a href="#">обработки персональных данных</a></p>
+            </div>
+            <div class="modal__button">
+              <input type="hidden" name="theme"/>
+              <button>Отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal_third">
+      <div class="modal__wrapper">
+        <div class="modal__crosswrap">
+          <div class="modal__cross"><span></span><span></span></div>
+        </div>
+        <h2 class="modal__title">Укажите свои данные и мы свяжемся с вами</h2>
+        <div class="modal__form">
+          <form method="POST">
+            <div class="modal__item">
+              <input type="text" placeholder="Как к вам обращаться?" name="name" required="required" class="modal__input"/>
+            </div>
+            <div class="modal__item">
+              <input type="email" placeholder="Укажите свой действующией е-майл." name="email" required="required" class="modal__input"/>
+            </div>
+            <div class="modal__footer">
+              <p>Заполняя данную форму, вы принимаете условия “Соглашения об использовании сайта”, в том числе в части <a href="#">обработки персональных данных</a></p>
+            </div>
+            <div class="modal__button">
+              <input type="hidden" name="theme"/>
+              <button>Отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal_fourth">
+      <div class="modal__wrapper">
+        <div class="modal__crosswrap">
+          <div class="modal__cross"><span></span><span></span></div>
+        </div>
+        <h2 class="modal__title">Укажите свои данные и мы свяжемся с вами</h2>
+        <div class="modal__form">
+          <form method="POST">
+            <div class="modal__item">
+              <input type="text" placeholder="Как к вам обращаться?" name="name" required="required" class="modal__input"/>
+            </div>
+            <div class="modal__item">
+              <input type="text" placeholder="Удобный способ связи" name="callback" required="required" class="modal__input"/>
+            </div>
+            <div class="modal__item">
+              <input type="text" placeholder="Ссылка на сайт" name="site" required="required" class="modal__input"/>
+            </div>
+            <div class="modal__item">
+              <textarea placeholder="Коментарий" name="text" required="required" class="modal__input modal__textarea"></textarea>
+            </div>
+            <div class="modal__footer">
+              <p>Заполняя данную форму, вы принимаете условия “Соглашения об использовании сайта”, в том числе в части <a href="#">обработки персональных данных</a></p>
+            </div>
+            <div class="modal__button">
+              <input type="hidden" name="theme"/>
+              <button>Отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal_fiveth">
+      <div class="modal__wrapper">
+        <div class="modal__crosswrap">
+          <div class="modal__cross"><span></span><span></span></div>
+        </div>
+        <h2 class="modal__title">Укажите свои данные и мы свяжемся с вами</h2>
+        <div class="modal__form">
+          <form method="POST">
+            <div class="modal__item">
+              <input type="text" placeholder="Как к вам обращаться?" name="name" required="required" class="modal__input"/>
+            </div>
+            <div class="modal__item">
+              <input type="text" placeholder="Удобный способ связи" name="callback" required="required" class="modal__input"/>
+            </div>
+            <div class="modal__item">
+              <textarea placeholder="Поле для вопроса" name="text" required="required" class="modal__input modal__textarea"></textarea>
             </div>
             <div class="modal__footer">
               <p>Заполняя данную форму, вы принимаете условия “Соглашения об использовании сайта”, в том числе в части <a href="#">обработки персональных данных</a></p>

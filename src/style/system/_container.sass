@@ -18,7 +18,7 @@
 	flex-wrap: wrap
 
 
-.container-text
+.container-text, .container-rev
 	+clearfix
 	display: block
 	font-family: Candara, sans-serif
@@ -54,6 +54,53 @@
 	h5
 		+fz(17)
 		padding-bottom: 20px
+
+.container-rev
+	padding-top: 30px
+	margin-bottom: 10px
+	*
+		+fz(20)
+	h1
+		+fz(30)
+		text-align: center
+		+ffg
+		padding-bottom: 25px
+	h2
+		+fz(27)
+		+ffg
+		text-align: center
+		padding-bottom: 20px
+	h3
+		+fz(24)
+		+ffg
+		padding-bottom: 16px
+		text-align: center
+	h4
+		+fz(22)
+		+ffg
+		padding-bottom: 14px
+		text-align: center
+	h5
+		padding-bottom: 10px
+		+fz(21)
+		+ffg
+		text-align: center
+	img
+		width: 100%
+		display: block
+		margin: 10px 0
+		vertical-align: top
+	p
+		&:first-letter
+			padding-left: 20px
+.rev__link
+	text-align: center
+	+fz(30)
+	padding-bottom: 20px
+	+ffg
+	a
+		color: #72a846
+		text-decoration: none
 
 
 .container__buttons

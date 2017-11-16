@@ -1,25 +1,71 @@
 extends jade/template
 block includes
-   include jade/mixins/**/*.jade
+	include jade/mixins/**/*.jade
 block title
-   title 123
-   - var back = '#fff';
-   - var navColor = 'grey';
+	title 123
+	- var back = '#fff';
+	- var navColor = 'green';
 block content
-   header.head.head-index.bg-cover.bg-rev(style="background-image: url(http://loremflickr.com/1920/800)")
-      .head__topline
-         .container-flex
-            +logo-topline
-            +righthead
-      +navmain(color)
-      +fixednav(color)
-      +mobile-menu
-   article.container.container-rev
-      h1 Доктор Диана - сайт для стоматолога-терапевта
-      p Яркий, живой, интересный, настоящий - такой получился сайт. И именно такой специалист стоит за этим сайтом. И этот специалист - Доктор Диана. Стоматолог Лавринец Диана Сергеевна.
-      p Открытая, эмоциональная, красивая и женственная девушка и просто замечательный профессионал своего дела. При работе над проектом столкнулись с некоторыми проблемами, а именно: Наша клиентка не знала что хочет и как хочет. Такое бывает, и для нас, это уже не проблема.
-      img(src="http://loremflickr.com/1920/800" alt="123")
-      p Главная задача была - просто сделать сайт. Но нам так понравился доктор, что мы попросили полную свободу действий и решили вложить в проект всю душу всей команды.
-      p Фотографы, художники, дизайнеры, копирайтеры и креативщики - все потрудились над проектом и каждый внёс частичку себя.
-   .rev__link
-      p Итог вы можете посмотреть здесь: <a href="#">http://доктордиана.рф/</a>
+	header.head.head-second.bg-cover
+		.head__topline
+			.container-flex
+				+logo-toplinedark
+				+rightheaddark
+		+navmain(navColor)
+		+fixednav(navColor)
+		+mobile-menu
+	+breadcrumbs
+	.content__wrap
+		.content__left
+			.aside__wrapper
+				.aside__wrap
+					+aside(navColor)
+					.aside__bottom
+						p Вы можете получить анализ своего сайта совершенно бесплатно!
+						a(data-theme='Вопрос' data-modal='.modal_ask' href="#").modal-open.button.button-red.button-head Получить бесплатно
+		.content__right
+			h1.content__title.content__title_dark Партнеры
+			.container-flex.container-work
+				.map
+					.map__wrapper
+						<iframe src="https://yandex.ru/map-widget/v1/-/CVgYMXJH" frameborder="0"></iframe>
+					.map__lists
+						.map__head
+							.map__table
+								p.map__th Город
+								p.map__th Представитель
+								p.map__th Контакты
+						.map__content
+							.map__item
+								.map__visible
+									.map__table
+										p.map__td 123
+										p.map__td 123
+										p.map__td 123
+								.map__hidden
+									.map__table
+										p.map__td 123
+										p.map__td 123
+										p.map__td 123
+							.map__item
+								.map__visible
+									.map__table
+										p.map__td 123
+										p.map__td 123
+										p.map__td 123
+								.map__hidden
+									.map__table
+										p.map__td 123
+										p.map__td 123
+										p.map__td 123
+							.map__item
+								.map__visible
+									.map__table
+										p.map__td 123
+										p.map__td 123
+										p.map__td 123
+								.map__hidden
+									.map__table
+										p.map__td 123
+										p.map__td 123
+										p.map__td 123

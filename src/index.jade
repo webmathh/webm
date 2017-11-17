@@ -4,7 +4,7 @@ block includes
 block title
 	title 123
 	- var back = '#fff';
-	- var navColor = 'green';
+	- var navColor = 'red';
 block content
 	header.head.head-second.bg-cover
 		.head__topline
@@ -24,48 +24,24 @@ block content
 						p Вы можете получить анализ своего сайта совершенно бесплатно!
 						a(data-theme='Вопрос' data-modal='.modal_ask' href="#").modal-open.button.button-red.button-head Получить бесплатно
 		.content__right
-			h1.content__title.content__title_dark Партнеры
+			h1.content__title.content__title_dark Команда
 			.container-flex.container-work
-				.map
-					.map__wrapper
-						<iframe src="https://yandex.ru/map-widget/v1/-/CVgYMXJH" frameborder="0"></iframe>
-					.map__lists
-						.map__head
-							.map__table
-								p.map__th Город
-								p.map__th Представитель
-								p.map__th Контакты
-						.map__content
-							.map__item
-								.map__visible
-									.map__table
-										p.map__td 123
-										p.map__td 123
-										p.map__td 123
-								.map__hidden
-									.map__table
-										p.map__td 123
-										p.map__td 123
-										p.map__td 123
-							.map__item
-								.map__visible
-									.map__table
-										p.map__td 123
-										p.map__td 123
-										p.map__td 123
-								.map__hidden
-									.map__table
-										p.map__td 123
-										p.map__td 123
-										p.map__td 123
-							.map__item
-								.map__visible
-									.map__table
-										p.map__td 123
-										p.map__td 123
-										p.map__td 123
-								.map__hidden
-									.map__table
-										p.map__td 123
-										p.map__td 123
-										p.map__td 123
+				+team_page('Алена Брежнева','SEO, ведение проектов')
+				+team_page('Степан Кузовов','Разработка front, back-end')
+				+team_page('Евгений Марков','Дизайн, маркетинг')
+				+team_page('Илья Федулов','Фото, видео сопровождение')
+
+
+
+mixin team_page(name, positions)
+	.teams.teams__clients
+		.teams__left
+			.teams__img
+				img(src="http://loremflickr.com/270/270" alt=name)
+		.teams__right
+			h3.teams__title=name
+			p С другой стороны рамки и место обучения кадров в значительной степени обуславливает создание позиций, занимаемых участниками в отношении поставленных задач. Товарищи! рамки и место обучения кадров способствует подготовки и реализации дальнейших направлений развития.
+			p.clients__work Сайт:
+				a(href='#' target="_blank")	123
+
+

@@ -1,0 +1,94 @@
+.scroll
+	z-index: 1000
+	position: fixed
+	left: 0
+	max-width: 180px
+	width: 100%
+	height: 100%
+	bottom: 0
+	cursor: pointer
+	display: none
+	&::after
+		content: ''
+		transition: all .5s
+		position: absolute
+		left: 0
+		right: 0
+		top: 100%
+		bottom: 0
+	&_dark
+		&::after
+			background-color: #7f7f7f
+	&_light
+		&::after
+			background-color: rgba(#fff, .5)
+
+	&:hover
+		&::after
+			top: 0
+		.scroll__wrapper
+			&_light
+				border-color: transparent
+				svg
+					fill: #fff
+			&_dark
+				border-color: transparent
+				svg
+					fill: #000000
+
+
+
+
+
+	&__wrapper
+		position: absolute
+		top: 50%
+		width: 60px
+		height: 60px
+		margin: 0 auto
+		left: 0
+		z-index: 1001
+		right: 0
+		transform: translateY(-50%)
+		transition: all .25s
+		border: 2px solid
+		text-align: center
+		-webkit-border-radius: 40px
+		-moz-border-radius: 40px
+		border-radius: 20px
+		line-height: 65px
+		svg
+			transition: all .25s
+			width: 40px
+			height: 24px
+		&_dark
+			border-color: #7f7f7f
+			svg
+				fill: #7f7f7f
+
+		&_light
+			border-color: rgba(#fff, .5)
+			svg
+				fill: rgba(#fff, .5)
+
+@media screen and (max-width: 1350px)
+	.scroll
+		height: 70px
+		max-width: 100%
+		&::after
+			top: 0
+		&__wrapper
+			&_dark
+				svg
+					fill: #000
+			&_light
+				svg
+					fill: #fff
+
+
+
+			
+			
+			
+
+

@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b7d228a-2514-41c9-bddf-fec4df01c119" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/js/libs.js" afterPath="$PROJECT_DIR$/build/js/libs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/style/styles.css" afterPath="$PROJECT_DIR$/build/style/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/libs/canvas.js" afterPath="$PROJECT_DIR$/src/js/libs/canvas.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/style/index/_works.sass" afterPath="$PROJECT_DIR$/src/style/index/_works.sass" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/style/nav/_aside.sass" afterPath="$PROJECT_DIR$/src/style/nav/_aside.sass" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,10 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_works.sass" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_works.sass" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/style/index/_works.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
+            <state relative-caret-position="1100">
               <caret line="135" column="22" lean-forward="false" selection-start-line="135" selection-start-column="22" selection-end-line="135" selection-end-column="22" />
               <folding />
             </state>
@@ -111,11 +106,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_aside.sass" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_aside.sass" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/style/nav/_aside.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+            <state relative-caret-position="339">
+              <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -213,8 +208,8 @@
         <option value="$PROJECT_DIR$/src/style/works/_work.sass" />
         <option value="$PROJECT_DIR$/src/js/libs/work.js" />
         <option value="$PROJECT_DIR$/src/js/libs/canvas.js" />
-        <option value="$PROJECT_DIR$/src/style/nav/_aside.sass" />
         <option value="$PROJECT_DIR$/src/style/index/_works.sass" />
+        <option value="$PROJECT_DIR$/src/style/nav/_aside.sass" />
       </list>
     </option>
   </component>
@@ -823,12 +818,12 @@
       <workItem from="1510909884945" duration="2803000" />
       <workItem from="1510990658717" duration="762000" />
       <workItem from="1511020951549" duration="5422000" />
-      <workItem from="1511171720605" duration="13787000" />
+      <workItem from="1511171720605" duration="14389000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146718000" />
+    <option name="totallyTimeSpent" value="147320000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1260,18 +1255,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/style/nav/_aside.sass">
+    <entry file="file://$PROJECT_DIR$/src/style/index/_works.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        <state relative-caret-position="1100">
+          <caret line="135" column="22" lean-forward="false" selection-start-line="135" selection-start-column="22" selection-end-line="135" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/style/index/_works.sass">
+    <entry file="file://$PROJECT_DIR$/src/style/nav/_aside.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="135" column="22" lean-forward="false" selection-start-line="135" selection-start-column="22" selection-end-line="135" selection-end-column="22" />
+        <state relative-caret-position="339">
+          <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
           <folding />
         </state>
       </provider>

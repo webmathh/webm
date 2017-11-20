@@ -2,7 +2,7 @@ var w = (c.width = window.innerWidth),
     h = (c.height = window.innerHeight),
     ctx = c.getContext("2d"),
     opts = {
-        range: 180,
+        range: 350,
         baseConnections: 3,
         addedConnections: 5,
         baseSize: 5,
@@ -23,11 +23,11 @@ var w = (c.width = window.innerWidth),
         rotVelX: 0.003,
         rotVelY: 0.002,
 
-        repaintColor: "#111",
-        connectionColor: "hsla(200,60%,light%,alp)",
-        rootColor: "hsla(0,60%,light%,alp)",
-        endColor: "hsla(160,20%,light%,alp)",
-        dataColor: "hsla(40,80%,light%,alp)",
+        repaintColor: '#355f6a',
+        connectionColor: 'hsla(192,86%,light%,1)',
+        rootColor: 'hsla(0,0%,light%,1)',
+        endColor: 'hsla(0,0%,light%,1)',
+        dataColor: 'hsla(0,0%,light%,1)',
 
         wireframeWidth: 0.1,
         wireframeColor: "#88f",
@@ -53,7 +53,7 @@ var w = (c.width = window.innerWidth),
     animating = false,
     Tau = Math.PI * 2;
 
-ctx.fillStyle = "#222";
+ctx.fillStyle = "#355f6a";
 ctx.fillRect(0, 0, w, h);
 ctx.fillStyle = "#ccc";
 ctx.font = "50px Verdana";

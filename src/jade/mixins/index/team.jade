@@ -11,7 +11,10 @@ mixin teams
 mixin team(who, positions)
 	.team__item
 		.team__imgwrap
-			img(src="http://loremflickr.com/270/270" alt=who).team__img
+			.team__image.team__image_passive
+				img(src="http://loremflickr.com/270/270" alt=who).team__img
+			.team__image.team__image_active
+				img(src="http://loremflickr.com/270/270" alt=who).team__img
 		.team__name
 			strong=who
 		.team__position

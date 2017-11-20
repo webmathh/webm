@@ -12,94 +12,97 @@
     <div class="wrapper">
       <div class="content">
         <header class="head head-index bg-cover">
-          <div class="head__topline">
-            <div class="container-flex"><a href="#" class="logo logo-topline"><img src="img/logo.png" alt="logo"/>
-                <div class="logo__text">
-                  <div class="logo__top">ВебМатематика</div>
-                  <div class="logo__bottom">простые web решения<br/>сложных задач</div>
-                </div></a>
-              <div class="head__right">
-                <div class="head__button"><a href="#" data-theme="Вопрос" data-modal=".modal_ask" class="modal-open button button-red button-brs22 button-head">Спросить бесплатно</a></div>
-                <div class="head__phone"><a href="tel:000000000" class="phone-top">8 (495) 295-99-55</a>
-                  <div data-modal=".modal_callback" data-theme="Вопрос" class="phone-callback modal-open">мы вам перезвоним</div>
+          <canvas id="c" class="canvas"></canvas>
+          <div class="header__wrapper">
+            <div class="head__topline">
+              <div class="container-flex"><a href="#" class="logo logo-topline"><img src="img/logo.png" alt="logo"/>
+                  <div class="logo__text">
+                    <div class="logo__top">ВебМатематика</div>
+                    <div class="logo__bottom">простые web решения<br/>сложных задач</div>
+                  </div></a>
+                <div class="head__right">
+                  <div class="head__button"><a href="#" data-theme="Вопрос" data-modal=".modal_ask" class="modal-open button button-red button-brs22 button-head">Спросить бесплатно</a></div>
+                  <div class="head__phone"><a href="tel:000000000" class="phone-top">8 (495) 295-99-55</a>
+                    <div data-modal=".modal_callback" data-theme="Вопрос" class="phone-callback modal-open">мы вам перезвоним</div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="container">
-            <nav class="nav nav-main">
-              <ul>
-                <li class="active"><a href="#" data-color="black">Главная</a></li>
-                <li><a href="#" data-color="blue">Услуги</a></li>
-                <li><a href="#" data-color="green">Кейсы</a></li>
-                <li><a href="#" data-color="yellow">ИнфоБлог</a></li>
-                <li><a href="#" data-color="red">О компании</a></li>
-              </ul>
-            </nav>
-          </div>
-          <nav class="nav-fixed nav">
-            <ul>
-              <li class="nav-logo"><a href="#"><img src="img/logo-mnu.png" alt="logo"/><span class="mobile-logo-text">ВебМатематика</span></a></li>
-              <ul>
-                <li class="hide active"><a href="#" data-color="black">Главная</a></li>
-                <li><a href="#" data-color="blue">Услуги</a></li>
-                <li><a href="#" data-color="green">Кейсы</a></li>
-                <li><a href="#" data-color="yellow">ИнфоБлог</a></li>
-                <li><a href="#" data-color="red">О компании</a></li>
-              </ul>
-              <li class="nav-phone"><a href="tel:+79780000000">8 (495) 295-99-55</a></li>
-              <li class="nav-dropdown"><span></span><span></span><span></span></li>
-            </ul>
-          </nav>
-          <div class="mobile-menu">
-            <div class="mobile-menu-top">
-              <div class="mobile-menu__wrap">
-                <div class="mobile-menu__logo"><a href="/"><img src="img/logo.png" alt="123"/></a></div>
-                <div class="mobile-menu__phone"><a href="tel:+7 (495) 295-99-55">+7 (495) 295-99-55</a>
-                  <p>мы вам перезвоним</p>
-                </div>
-                <div class="mobile-menu__cross"><span></span><span></span></div>
-              </div>
-            </div>
-            <div class="mobile-menu-list">
-              <nav>
+            <div class="container">
+              <nav class="nav nav-main">
                 <ul>
-                  <li class="drop-list mobile-menu_blue"><span>Услуги</span>
-                    <ul>
-                      <li><a href="#">Контакты</a></li>
-                      <li><a href="#">Партнеры</a></li>
-                    </ul>
-                  </li>
-                  <li class="drop-list mobile-menu_green"><span>Кейсы</span>
-                    <ul>
-                      <li><a href="#">Контакты</a></li>
-                      <li><a href="#">Партнеры</a></li>
-                    </ul>
-                  </li>
-                  <li class="drop-list mobile-menu_yellow"><span>ИнфоБлог</span>
-                    <ul>
-                      <li><a href="#">Контакты</a></li>
-                      <li><a href="#">Партнеры</a></li>
-                    </ul>
-                  </li>
-                  <li class="drop-list mobile-menu_brown"><span>О компании</span>
-                    <ul>
-                      <li><a href="#">Контакты</a></li>
-                      <li><a href="#">Партнеры</a></li>
-                    </ul>
-                  </li>
+                  <li class="active"><a href="#" data-color="black">Главная</a></li>
+                  <li><a href="#" data-color="blue">Услуги</a></li>
+                  <li><a href="#" data-color="green">Кейсы</a></li>
+                  <li><a href="#" data-color="yellow">ИнфоБлог</a></li>
+                  <li><a href="#" data-color="red">О компании</a></li>
                 </ul>
               </nav>
             </div>
-            <div class="mobile-menu-footer">
-              <button data-theme="Вопрос" data-modal=".modal_ask" class="button button-red mobile-menu__button modal-open">Спросить бесплатно</button>
+            <nav class="nav-fixed nav">
+              <ul>
+                <li class="nav-logo"><a href="#"><img src="img/logo-mnu.png" alt="logo"/><span class="mobile-logo-text">ВебМатематика</span></a></li>
+                <ul>
+                  <li class="hide active"><a href="#" data-color="black">Главная</a></li>
+                  <li><a href="#" data-color="blue">Услуги</a></li>
+                  <li><a href="#" data-color="green">Кейсы</a></li>
+                  <li><a href="#" data-color="yellow">ИнфоБлог</a></li>
+                  <li><a href="#" data-color="red">О компании</a></li>
+                </ul>
+                <li class="nav-phone"><a href="tel:+79780000000">8 (495) 295-99-55</a></li>
+                <li class="nav-dropdown"><span></span><span></span><span></span></li>
+              </ul>
+            </nav>
+            <div class="mobile-menu">
+              <div class="mobile-menu-top">
+                <div class="mobile-menu__wrap">
+                  <div class="mobile-menu__logo"><a href="/"><img src="img/logo.png" alt="123"/></a></div>
+                  <div class="mobile-menu__phone"><a href="tel:+7 (495) 295-99-55">+7 (495) 295-99-55</a>
+                    <p>мы вам перезвоним</p>
+                  </div>
+                  <div class="mobile-menu__cross"><span></span><span></span></div>
+                </div>
+              </div>
+              <div class="mobile-menu-list">
+                <nav>
+                  <ul>
+                    <li class="drop-list mobile-menu_blue"><span>Услуги</span>
+                      <ul>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Партнеры</a></li>
+                      </ul>
+                    </li>
+                    <li class="drop-list mobile-menu_green"><span>Кейсы</span>
+                      <ul>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Партнеры</a></li>
+                      </ul>
+                    </li>
+                    <li class="drop-list mobile-menu_yellow"><span>ИнфоБлог</span>
+                      <ul>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Партнеры</a></li>
+                      </ul>
+                    </li>
+                    <li class="drop-list mobile-menu_brown"><span>О компании</span>
+                      <ul>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Партнеры</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="mobile-menu-footer">
+                <button data-theme="Вопрос" data-modal=".modal_ask" class="button button-red mobile-menu__button modal-open">Спросить бесплатно</button>
+              </div>
             </div>
-          </div>
-          <div class="head__content">
-            <h1 class="head__content_title">Создаём, раскручиваем и поддерживаем <br/>сайты<br/>для любой сферы и любого бюджета.</h1>
-            <p class="head__content_blue">Первые <strong>клиенты</strong> уже завтра</p>
-            <p class="head__content_footer">Работаем по всей России и СНГ</p>
-            <button data-theme="Вопрос" data-modal=".modal_ask" class="button button-brs35 button-blue modal-open head__content_button">Узнать бесплатно</button>
+            <div class="head__content">
+              <h1 class="head__content_title">Создаём, раскручиваем и поддерживаем <br/>сайты<br/>для любой сферы и любого бюджета.</h1>
+              <p class="head__content_blue">Первые <strong>клиенты</strong> уже завтра</p>
+              <p class="head__content_footer">Работаем по всей России и СНГ</p>
+              <button data-theme="Вопрос" data-modal=".modal_ask" class="button button-brs35 button-blue modal-open head__content_button">Узнать бесплатно</button>
+            </div>
           </div>
         </header>
         <section class="works section">
@@ -437,28 +440,40 @@
           <h2 class="h2 h2-dark">Команда</h2>
           <div class="team__wrapper">
             <div class="team__item">
-              <div class="team__imgwrap"><img src="http://loremflickr.com/270/270" alt="Алена Брежнева" class="team__img"/></div>
+              <div class="team__imgwrap">
+                <div class="team__image team__image_passive"><img src="http://loremflickr.com/270/270" alt="Алена Брежнева" class="team__img"/></div>
+                <div class="team__image team__image_active"><img src="http://loremflickr.com/270/270" alt="Алена Брежнева" class="team__img"/></div>
+              </div>
               <div class="team__name"><strong>Алена Брежнева</strong></div>
               <div class="team__position">
                 <p>SEO, ведение проектов</p>
               </div>
             </div>
             <div class="team__item">
-              <div class="team__imgwrap"><img src="http://loremflickr.com/270/270" alt="Степан Кузовов" class="team__img"/></div>
+              <div class="team__imgwrap">
+                <div class="team__image team__image_passive"><img src="http://loremflickr.com/270/270" alt="Степан Кузовов" class="team__img"/></div>
+                <div class="team__image team__image_active"><img src="http://loremflickr.com/270/270" alt="Степан Кузовов" class="team__img"/></div>
+              </div>
               <div class="team__name"><strong>Степан Кузовов</strong></div>
               <div class="team__position">
                 <p>Разработка front, back - end</p>
               </div>
             </div>
             <div class="team__item">
-              <div class="team__imgwrap"><img src="http://loremflickr.com/270/270" alt="Евгений Марков" class="team__img"/></div>
+              <div class="team__imgwrap">
+                <div class="team__image team__image_passive"><img src="http://loremflickr.com/270/270" alt="Евгений Марков" class="team__img"/></div>
+                <div class="team__image team__image_active"><img src="http://loremflickr.com/270/270" alt="Евгений Марков" class="team__img"/></div>
+              </div>
               <div class="team__name"><strong>Евгений Марков</strong></div>
               <div class="team__position">
                 <p>Дизайн, маркетинг</p>
               </div>
             </div>
             <div class="team__item">
-              <div class="team__imgwrap"><img src="http://loremflickr.com/270/270" alt="Илья Федулов" class="team__img"/></div>
+              <div class="team__imgwrap">
+                <div class="team__image team__image_passive"><img src="http://loremflickr.com/270/270" alt="Илья Федулов" class="team__img"/></div>
+                <div class="team__image team__image_active"><img src="http://loremflickr.com/270/270" alt="Илья Федулов" class="team__img"/></div>
+              </div>
               <div class="team__name"><strong>Илья Федулов</strong></div>
               <div class="team__position">
                 <p>Фото, видео сопровождение</p>
@@ -541,6 +556,10 @@
               <div class="footer__item"><a href="#">Политика <br/>конденциальности</a></div>
               <div class="footer__item"><a href="#">Юридическая <br/>информация</a></div>
             </div>
+          </div>
+          <div class="footer__wrapper footer__center footer__green">
+            <p class="first">ВебМатематика © 2014 - н.в.</p>
+            <p class="last">создание продвижение и поддержка сайтов</p>
           </div>
         </footer>
         <!--Скролинг темный-->

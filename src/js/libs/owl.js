@@ -23,11 +23,14 @@ $('.case__slider').owlCarousel({
     loop: true,
     dots: false,
     responsiveClass:true,
+    autoplay: true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
     responsive:{
         0:{
             items:1
         },
-        1000: {
+        1200: {
             items: 2
         }
     }

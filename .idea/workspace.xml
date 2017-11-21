@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b7d228a-2514-41c9-bddf-fec4df01c119" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/style/styles.css" afterPath="$PROJECT_DIR$/build/style/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/style/index/_head.sass" afterPath="$PROJECT_DIR$/src/style/index/_head.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/style/nav/_aside.sass" afterPath="$PROJECT_DIR$/src/style/nav/_aside.sass" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/style/index/_team.sass" afterPath="$PROJECT_DIR$/src/style/index/_team.sass" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -70,16 +66,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scripts.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/jade/components/scripts.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="nav.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/libs/nav.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -130,11 +116,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_head.sass" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_head.sass" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/style/index/_head.sass">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="440">
               <caret line="20" column="30" lean-forward="false" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_team.sass" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/style/index/_team.sass">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -226,7 +222,6 @@
         <option value="$PROJECT_DIR$/src/jade/components/footer.jade" />
         <option value="$PROJECT_DIR$/src/style/footer/_footer.sass" />
         <option value="$PROJECT_DIR$/src/jade/mixins/index/team.jade" />
-        <option value="$PROJECT_DIR$/src/style/index/_team.sass" />
         <option value="$PROJECT_DIR$/src/style/index/_head-content.sass" />
         <option value="$PROJECT_DIR$/src/style/works/_work.sass" />
         <option value="$PROJECT_DIR$/src/js/libs/work.js" />
@@ -234,6 +229,7 @@
         <option value="$PROJECT_DIR$/src/style/index/_works.sass" />
         <option value="$PROJECT_DIR$/src/style/nav/_aside.sass" />
         <option value="$PROJECT_DIR$/src/style/index/_head.sass" />
+        <option value="$PROJECT_DIR$/src/style/index/_team.sass" />
       </list>
     </option>
   </component>
@@ -843,12 +839,12 @@
       <workItem from="1510990658717" duration="762000" />
       <workItem from="1511020951549" duration="5422000" />
       <workItem from="1511171720605" duration="15676000" />
-      <workItem from="1511276046053" duration="228000" />
+      <workItem from="1511276046053" duration="848000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148835000" />
+    <option name="totallyTimeSpent" value="149455000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1122,13 +1118,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/style/index/_team.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="29" column="24" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-154">
@@ -1282,6 +1271,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="20" column="30" lean-forward="false" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/style/index/_team.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
           <folding />
         </state>
       </provider>
